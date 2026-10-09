@@ -42,9 +42,9 @@
     "semantic_hash": ""
   },
   "src/actions/now-playing.ts": {
-    "mtime": 1791584533.4130566,
-    "seen": 1791584626.9458745,
-    "ast_hash": "e32908b963960135419ba3a98854f437",
+    "mtime": 1791584690.1996806,
+    "seen": 1791584777.6906285,
+    "ast_hash": "72b53648586b37eb74bc75fc79d5c735",
     "semantic_hash": ""
   },
   "src/actions/play-media.ts": {
@@ -108,8 +108,8 @@
     "semantic_hash": ""
   },
   "com.alexisvscsharp.nowplaying.sdPlugin/manifest.json": {
-    "mtime": 1791584620.2358193,
-    "seen": 1791584626.9458513,
+    "mtime": 1791584772.1669536,
+    "seen": 1791584777.6906073,
     "ast_hash": "3163980552660205d133422490165b5d",
     "semantic_hash": ""
   },

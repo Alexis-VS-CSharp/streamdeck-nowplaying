@@ -292,7 +292,7 @@
       "file_type": "code",
       "norm_label": "dialstate",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L36"
+      "source_location": "L33"
     },
     {
       "id": "src_actions_now_playing_fieldstate",
@@ -308,19 +308,6 @@
       "source_location": "L19"
     },
     {
-      "id": "src_actions_now_playing_mode",
-      "label": "Mode",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "now-playing.ts",
-      "file_type": "code",
-      "norm_label": "mode",
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L34"
-    },
-    {
       "id": "src_actions_now_playing_nowplayingaction",
       "label": "NowPlayingAction",
       "_callable": true,
@@ -331,7 +318,7 @@
       "file_type": "code",
       "norm_label": "nowplayingaction",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L220"
+      "source_location": "L162"
     },
     {
       "id": "src_actions_now_playing_nowplayingsettings",
@@ -357,7 +344,7 @@
       "file_type": "code",
       "norm_label": "scrollspec",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L59"
+      "source_location": "L51"
     },
     {
       "id": "src_actions_now_playing_timeline",
@@ -927,18 +914,6 @@
       "source_location": "L425"
     },
     {
-      "id": "build_bridge_nowplayingbridge_iaudiosessionmanager2_getsessionenumerator",
-      "label": ".GetSessionEnumerator()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "IAudioSessionControl2",
-      "file_type": "code",
-      "norm_label": ".getsessionenumerator()",
-      "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L427"
-    },
-    {
       "id": "build_bridge_nowplayingbridge_iaudiosessionmanager2_getsimpleaudiovolume",
       "label": ".GetSimpleAudioVolume()",
       "_callable": true,
@@ -1391,6 +1366,18 @@
       "source_location": "L438"
     },
     {
+      "id": "build_bridge_nowplayingbridge_iaudiosessionmanager2_getsessionenumerator",
+      "label": ".GetSessionEnumerator()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "NowPlayingBridge.cs",
+      "file_type": "code",
+      "norm_label": ".getsessionenumerator()",
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L427"
+    },
+    {
       "id": "build_bridge_nowplayingbridge_immdevice_activate",
       "label": ".Activate()",
       "_callable": true,
@@ -1523,18 +1510,6 @@
       "source_location": "L403"
     },
     {
-      "id": "src_actions_now_playing_artistfeedback",
-      "label": "artistFeedback()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "now-playing.ts",
-      "file_type": "code",
-      "norm_label": "artistfeedback()",
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L203"
-    },
-    {
       "id": "src_actions_now_playing_cleanartist",
       "label": "cleanArtist()",
       "_callable": true,
@@ -1544,7 +1519,7 @@
       "file_type": "code",
       "norm_label": "cleanartist()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L75"
+      "source_location": "L62"
     },
     {
       "id": "src_actions_now_playing_fits",
@@ -1556,7 +1531,7 @@
       "file_type": "code",
       "norm_label": "fits()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L121"
+      "source_location": "L108"
     },
     {
       "id": "src_actions_now_playing_formatartists",
@@ -1568,7 +1543,7 @@
       "file_type": "code",
       "norm_label": "formatartists()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L81"
+      "source_location": "L68"
     },
     {
       "id": "src_actions_now_playing_formattime",
@@ -1580,7 +1555,7 @@
       "file_type": "code",
       "norm_label": "formattime()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L92"
+      "source_location": "L79"
     },
     {
       "id": "src_actions_now_playing_makefieldstate",
@@ -1592,7 +1567,7 @@
       "file_type": "code",
       "norm_label": "makefieldstate()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L117"
+      "source_location": "L104"
     },
     {
       "id": "src_actions_now_playing_nowplayingaction_ensurescrolltimer",
@@ -1604,7 +1579,7 @@
       "file_type": "code",
       "norm_label": ".ensurescrolltimer()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L405"
+      "source_location": "L320"
     },
     {
       "id": "src_actions_now_playing_nowplayingaction_fetchnext",
@@ -1616,19 +1591,7 @@
       "file_type": "code",
       "norm_label": ".fetchnext()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L389"
-    },
-    {
-      "id": "src_actions_now_playing_nowplayingaction_maybefetchnext",
-      "label": ".maybeFetchNext()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "now-playing.ts",
-      "file_type": "code",
-      "norm_label": ".maybefetchnext()",
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L377"
+      "source_location": "L303"
     },
     {
       "id": "src_actions_now_playing_nowplayingaction_ondialdown",
@@ -1640,7 +1603,7 @@
       "file_type": "code",
       "norm_label": ".ondialdown()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L268"
+      "source_location": "L212"
     },
     {
       "id": "src_actions_now_playing_nowplayingaction_ondialrotate",
@@ -1652,7 +1615,7 @@
       "file_type": "code",
       "norm_label": ".ondialrotate()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L293"
+      "source_location": "L237"
     },
     {
       "id": "src_actions_now_playing_nowplayingaction_ondidreceivesettings",
@@ -1664,7 +1627,7 @@
       "file_type": "code",
       "norm_label": ".ondidreceivesettings()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L253"
+      "source_location": "L195"
     },
     {
       "id": "src_actions_now_playing_nowplayingaction_ontouchtap",
@@ -1676,7 +1639,7 @@
       "file_type": "code",
       "norm_label": ".ontouchtap()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L289"
+      "source_location": "L233"
     },
     {
       "id": "src_actions_now_playing_nowplayingaction_onupdate",
@@ -1688,7 +1651,7 @@
       "file_type": "code",
       "norm_label": ".onupdate()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L225"
+      "source_location": "L167"
     },
     {
       "id": "src_actions_now_playing_nowplayingaction_onwillappear",
@@ -1700,7 +1663,7 @@
       "file_type": "code",
       "norm_label": ".onwillappear()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L227"
+      "source_location": "L169"
     },
     {
       "id": "src_actions_now_playing_nowplayingaction_onwilldisappear",
@@ -1712,7 +1675,7 @@
       "file_type": "code",
       "norm_label": ".onwilldisappear()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L238"
+      "source_location": "L180"
     },
     {
       "id": "src_actions_now_playing_nowplayingaction_render",
@@ -1724,7 +1687,7 @@
       "file_type": "code",
       "norm_label": ".render()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L297"
+      "source_location": "L241"
     },
     {
       "id": "src_actions_now_playing_nowplayingaction_stopscrolltimer",
@@ -1736,7 +1699,7 @@
       "file_type": "code",
       "norm_label": ".stopscrolltimer()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L412"
+      "source_location": "L327"
     },
     {
       "id": "src_actions_now_playing_nowplayingaction_tickscroll",
@@ -1748,7 +1711,7 @@
       "file_type": "code",
       "norm_label": ".tickscroll()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L419"
+      "source_location": "L334"
     },
     {
       "id": "src_actions_now_playing_positionof",
@@ -1760,19 +1723,7 @@
       "file_type": "code",
       "norm_label": "positionof()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L100"
-    },
-    {
-      "id": "src_actions_now_playing_remainingms",
-      "label": "remainingMs()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "now-playing.ts",
-      "file_type": "code",
-      "norm_label": "remainingms()",
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L174"
+      "source_location": "L87"
     },
     {
       "id": "src_actions_now_playing_scrolltext",
@@ -1784,19 +1735,7 @@
       "file_type": "code",
       "norm_label": "scrolltext()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L126"
-    },
-    {
-      "id": "src_actions_now_playing_syncmode",
-      "label": "syncMode()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "now-playing.ts",
-      "file_type": "code",
-      "norm_label": "syncmode()",
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L208"
+      "source_location": "L113"
     },
     {
       "id": "src_actions_now_playing_tickfield",
@@ -1808,7 +1747,7 @@
       "file_type": "code",
       "norm_label": "tickfield()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L146"
+      "source_location": "L133"
     },
     {
       "id": "src_actions_now_playing_timefeedback",
@@ -1820,43 +1759,7 @@
       "file_type": "code",
       "norm_label": "timefeedback()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L105"
-    },
-    {
-      "id": "src_actions_now_playing_titlefeedback",
-      "label": "titleFeedback()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "now-playing.ts",
-      "file_type": "code",
-      "norm_label": "titlefeedback()",
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L194"
-    },
-    {
-      "id": "src_actions_now_playing_titlespec",
-      "label": "titleSpec()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "now-playing.ts",
-      "file_type": "code",
-      "norm_label": "titlespec()",
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L189"
-    },
-    {
-      "id": "src_actions_now_playing_wantedmode",
-      "label": "wantedMode()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 3,
-      "community_name": "now-playing.ts",
-      "file_type": "code",
-      "norm_label": "wantedmode()",
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L178"
+      "source_location": "L92"
     },
     {
       "id": "src_text_metrics_textwidthpx",
@@ -2627,6 +2530,116 @@
       "source_location": ""
     },
     {
+      "id": "package_devdependencies",
+      "label": "devDependencies",
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "devdependencies",
+      "source_file": "package.json",
+      "source_location": "L13"
+    },
+    {
+      "id": "package_devdependencies_elgato_cli",
+      "label": "@elgato/cli",
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "@elgato/cli",
+      "source_file": "package.json",
+      "source_location": "L14"
+    },
+    {
+      "id": "package_devdependencies_resvg_resvg_js",
+      "label": "@resvg/resvg-js",
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "@resvg/resvg-js",
+      "source_file": "package.json",
+      "source_location": "L15"
+    },
+    {
+      "id": "package_devdependencies_rollup",
+      "label": "rollup",
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "rollup",
+      "source_file": "package.json",
+      "source_location": "L21"
+    },
+    {
+      "id": "package_devdependencies_rollup_plugin_commonjs",
+      "label": "@rollup/plugin-commonjs",
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "@rollup/plugin-commonjs",
+      "source_file": "package.json",
+      "source_location": "L16"
+    },
+    {
+      "id": "package_devdependencies_rollup_plugin_node_resolve",
+      "label": "@rollup/plugin-node-resolve",
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "@rollup/plugin-node-resolve",
+      "source_file": "package.json",
+      "source_location": "L17"
+    },
+    {
+      "id": "package_devdependencies_rollup_plugin_terser",
+      "label": "@rollup/plugin-terser",
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "@rollup/plugin-terser",
+      "source_file": "package.json",
+      "source_location": "L18"
+    },
+    {
+      "id": "package_devdependencies_rollup_plugin_typescript",
+      "label": "@rollup/plugin-typescript",
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "@rollup/plugin-typescript",
+      "source_file": "package.json",
+      "source_location": "L19"
+    },
+    {
+      "id": "package_devdependencies_types_node",
+      "label": "@types/node",
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "@types/node",
+      "source_file": "package.json",
+      "source_location": "L20"
+    },
+    {
+      "id": "package_devdependencies_typescript",
+      "label": "typescript",
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "typescript",
+      "source_file": "package.json",
+      "source_location": "L22"
+    },
+    {
       "id": "build_bridge_nowplayingbridge",
       "label": "NowPlayingBridge.cs",
       "_origin": "ast",
@@ -2679,18 +2692,18 @@
       "file_type": "code",
       "norm_label": "artist_spec",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L61"
+      "source_location": "L53"
     },
     {
-      "id": "src_actions_now_playing_label_spec",
-      "label": "LABEL_SPEC",
+      "id": "src_actions_now_playing_next_spec",
+      "label": "NEXT_SPEC",
       "_origin": "ast",
       "community": 3,
       "community_name": "now-playing.ts",
       "file_type": "code",
-      "norm_label": "label_spec",
+      "norm_label": "next_spec",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L62"
+      "source_location": "L54"
     },
     {
       "id": "src_actions_now_playing_title_spec",
@@ -2701,7 +2714,7 @@
       "file_type": "code",
       "norm_label": "title_spec",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L60"
+      "source_location": "L52"
     },
     {
       "id": "src_text_metrics",
@@ -2768,116 +2781,6 @@
       "norm_label": "description",
       "source_file": "package.json",
       "source_location": "L6"
-    },
-    {
-      "id": "package_devdependencies",
-      "label": "devDependencies",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "devdependencies",
-      "source_file": "package.json",
-      "source_location": "L13"
-    },
-    {
-      "id": "package_devdependencies_elgato_cli",
-      "label": "@elgato/cli",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "@elgato/cli",
-      "source_file": "package.json",
-      "source_location": "L14"
-    },
-    {
-      "id": "package_devdependencies_resvg_resvg_js",
-      "label": "@resvg/resvg-js",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "@resvg/resvg-js",
-      "source_file": "package.json",
-      "source_location": "L15"
-    },
-    {
-      "id": "package_devdependencies_rollup",
-      "label": "rollup",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "rollup",
-      "source_file": "package.json",
-      "source_location": "L21"
-    },
-    {
-      "id": "package_devdependencies_rollup_plugin_commonjs",
-      "label": "@rollup/plugin-commonjs",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "@rollup/plugin-commonjs",
-      "source_file": "package.json",
-      "source_location": "L16"
-    },
-    {
-      "id": "package_devdependencies_rollup_plugin_node_resolve",
-      "label": "@rollup/plugin-node-resolve",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "@rollup/plugin-node-resolve",
-      "source_file": "package.json",
-      "source_location": "L17"
-    },
-    {
-      "id": "package_devdependencies_rollup_plugin_terser",
-      "label": "@rollup/plugin-terser",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "@rollup/plugin-terser",
-      "source_file": "package.json",
-      "source_location": "L18"
-    },
-    {
-      "id": "package_devdependencies_rollup_plugin_typescript",
-      "label": "@rollup/plugin-typescript",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "@rollup/plugin-typescript",
-      "source_file": "package.json",
-      "source_location": "L19"
-    },
-    {
-      "id": "package_devdependencies_types_node",
-      "label": "@types/node",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "@types/node",
-      "source_file": "package.json",
-      "source_location": "L20"
-    },
-    {
-      "id": "package_devdependencies_typescript",
-      "label": "typescript",
-      "_origin": "ast",
-      "community": 4,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "typescript",
-      "source_file": "package.json",
-      "source_location": "L22"
     },
     {
       "id": "package_license",
@@ -3573,6 +3476,201 @@
       "source_location": "L16"
     },
     {
+      "id": "readme_fr_apple_music_for_windows",
+      "label": "Apple Music for Windows",
+      "_origin": "semantic",
+      "author": null,
+      "captured_at": null,
+      "community": 14,
+      "community_name": "Apple Music Now Playing README (French)",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "apple music for windows",
+      "source_file": "README.fr.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "readme_fr_core_audio",
+      "label": "Core Audio (ISimpleAudioVolume)",
+      "_origin": "semantic",
+      "author": null,
+      "captured_at": null,
+      "community": 14,
+      "community_name": "Apple Music Now Playing README (French)",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "core audio (isimpleaudiovolume)",
+      "source_file": "README.fr.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "readme_fr_keypad_buttons",
+      "label": "Keypad Buttons Feature",
+      "_origin": "semantic",
+      "author": null,
+      "captured_at": null,
+      "community": 14,
+      "community_name": "Apple Music Now Playing README (French)",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "keypad buttons feature",
+      "source_file": "README.fr.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "readme_fr_launch_playlist_album",
+      "label": "Launch Playlist/Album Button Feature",
+      "_origin": "semantic",
+      "author": null,
+      "captured_at": null,
+      "community": 14,
+      "community_name": "Apple Music Now Playing README (French)",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "launch playlist/album button feature",
+      "source_file": "README.fr.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "readme_fr_music_protocol",
+      "label": "music:// Protocol",
+      "_origin": "semantic",
+      "author": null,
+      "captured_at": null,
+      "community": 14,
+      "community_name": "Apple Music Now Playing README (French)",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "music:// protocol",
+      "source_file": "README.fr.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "readme_fr_now_playing_dial",
+      "label": "Now Playing Dial Feature",
+      "_origin": "semantic",
+      "author": null,
+      "captured_at": null,
+      "community": 14,
+      "community_name": "Apple Music Now Playing README (French)",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "now playing dial feature",
+      "source_file": "README.fr.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "readme_fr_nowplayingbridge_exe",
+      "label": "NowPlayingBridge.exe",
+      "_origin": "semantic",
+      "author": null,
+      "captured_at": null,
+      "community": 14,
+      "community_name": "Apple Music Now Playing README (French)",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "nowplayingbridge.exe",
+      "source_file": "README.fr.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "readme_fr_smtc",
+      "label": "SMTC (Windows.Media.Control)",
+      "_origin": "semantic",
+      "author": null,
+      "captured_at": null,
+      "community": 14,
+      "community_name": "Apple Music Now Playing README (French)",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "smtc (windows.media.control)",
+      "source_file": "README.fr.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "readme_fr_stream_deck",
+      "label": "Stream Deck / Stream Deck+",
+      "_origin": "semantic",
+      "author": null,
+      "captured_at": null,
+      "community": 14,
+      "community_name": "Apple Music Now Playing README (French)",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "stream deck / stream deck+",
+      "source_file": "README.fr.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "readme_fr_ui_automation",
+      "label": "UI Automation",
+      "_origin": "semantic",
+      "author": null,
+      "captured_at": null,
+      "community": 14,
+      "community_name": "Apple Music Now Playing README (French)",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "ui automation",
+      "source_file": "README.fr.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "readme_fr",
+      "label": "Apple Music Now Playing README (French)",
+      "_origin": "semantic",
+      "author": null,
+      "captured_at": null,
+      "community": 14,
+      "community_name": "Apple Music Now Playing README (French)",
+      "contributor": null,
+      "file_type": "document",
+      "norm_label": "apple music now playing readme (french)",
+      "source_file": "README.fr.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "readme_fr_shuffle_repeat_limitation",
+      "label": "Shuffle/Repeat Not Controllable",
+      "_origin": "semantic",
+      "author": null,
+      "captured_at": null,
+      "community": 14,
+      "community_name": "Apple Music Now Playing README (French)",
+      "contributor": null,
+      "file_type": "rationale",
+      "norm_label": "shuffle/repeat not controllable",
+      "source_file": "README.fr.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "readme_fr_steelseries_sonar_limitation",
+      "label": "Third-Party Audio Mixing Volume Limitation",
+      "_origin": "semantic",
+      "author": null,
+      "captured_at": null,
+      "community": 14,
+      "community_name": "Apple Music Now Playing README (French)",
+      "contributor": null,
+      "file_type": "rationale",
+      "norm_label": "third-party audio mixing volume limitation",
+      "source_file": "README.fr.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
       "id": "readme_apple_music_for_windows",
       "label": "Apple Music for Windows",
       "_origin": "semantic",
@@ -3614,156 +3712,6 @@
       "file_type": "concept",
       "norm_label": "corsair galleon 100 sd",
       "source_file": "README.md",
-      "source_location": null,
-      "source_url": null
-    },
-    {
-      "id": "readme_fr_apple_music_for_windows",
-      "label": "Apple Music for Windows",
-      "_origin": "semantic",
-      "author": null,
-      "captured_at": null,
-      "community": 5,
-      "community_name": "Apple Music Now Playing README (English)",
-      "contributor": null,
-      "file_type": "concept",
-      "norm_label": "apple music for windows",
-      "source_file": "README.fr.md",
-      "source_location": null,
-      "source_url": null
-    },
-    {
-      "id": "readme_fr_core_audio",
-      "label": "Core Audio (ISimpleAudioVolume)",
-      "_origin": "semantic",
-      "author": null,
-      "captured_at": null,
-      "community": 5,
-      "community_name": "Apple Music Now Playing README (English)",
-      "contributor": null,
-      "file_type": "concept",
-      "norm_label": "core audio (isimpleaudiovolume)",
-      "source_file": "README.fr.md",
-      "source_location": null,
-      "source_url": null
-    },
-    {
-      "id": "readme_fr_keypad_buttons",
-      "label": "Keypad Buttons Feature",
-      "_origin": "semantic",
-      "author": null,
-      "captured_at": null,
-      "community": 5,
-      "community_name": "Apple Music Now Playing README (English)",
-      "contributor": null,
-      "file_type": "concept",
-      "norm_label": "keypad buttons feature",
-      "source_file": "README.fr.md",
-      "source_location": null,
-      "source_url": null
-    },
-    {
-      "id": "readme_fr_launch_playlist_album",
-      "label": "Launch Playlist/Album Button Feature",
-      "_origin": "semantic",
-      "author": null,
-      "captured_at": null,
-      "community": 5,
-      "community_name": "Apple Music Now Playing README (English)",
-      "contributor": null,
-      "file_type": "concept",
-      "norm_label": "launch playlist/album button feature",
-      "source_file": "README.fr.md",
-      "source_location": null,
-      "source_url": null
-    },
-    {
-      "id": "readme_fr_music_protocol",
-      "label": "music:// Protocol",
-      "_origin": "semantic",
-      "author": null,
-      "captured_at": null,
-      "community": 5,
-      "community_name": "Apple Music Now Playing README (English)",
-      "contributor": null,
-      "file_type": "concept",
-      "norm_label": "music:// protocol",
-      "source_file": "README.fr.md",
-      "source_location": null,
-      "source_url": null
-    },
-    {
-      "id": "readme_fr_now_playing_dial",
-      "label": "Now Playing Dial Feature",
-      "_origin": "semantic",
-      "author": null,
-      "captured_at": null,
-      "community": 5,
-      "community_name": "Apple Music Now Playing README (English)",
-      "contributor": null,
-      "file_type": "concept",
-      "norm_label": "now playing dial feature",
-      "source_file": "README.fr.md",
-      "source_location": null,
-      "source_url": null
-    },
-    {
-      "id": "readme_fr_nowplayingbridge_exe",
-      "label": "NowPlayingBridge.exe",
-      "_origin": "semantic",
-      "author": null,
-      "captured_at": null,
-      "community": 5,
-      "community_name": "Apple Music Now Playing README (English)",
-      "contributor": null,
-      "file_type": "concept",
-      "norm_label": "nowplayingbridge.exe",
-      "source_file": "README.fr.md",
-      "source_location": null,
-      "source_url": null
-    },
-    {
-      "id": "readme_fr_smtc",
-      "label": "SMTC (Windows.Media.Control)",
-      "_origin": "semantic",
-      "author": null,
-      "captured_at": null,
-      "community": 5,
-      "community_name": "Apple Music Now Playing README (English)",
-      "contributor": null,
-      "file_type": "concept",
-      "norm_label": "smtc (windows.media.control)",
-      "source_file": "README.fr.md",
-      "source_location": null,
-      "source_url": null
-    },
-    {
-      "id": "readme_fr_stream_deck",
-      "label": "Stream Deck / Stream Deck+",
-      "_origin": "semantic",
-      "author": null,
-      "captured_at": null,
-      "community": 5,
-      "community_name": "Apple Music Now Playing README (English)",
-      "contributor": null,
-      "file_type": "concept",
-      "norm_label": "stream deck / stream deck+",
-      "source_file": "README.fr.md",
-      "source_location": null,
-      "source_url": null
-    },
-    {
-      "id": "readme_fr_ui_automation",
-      "label": "UI Automation",
-      "_origin": "semantic",
-      "author": null,
-      "captured_at": null,
-      "community": 5,
-      "community_name": "Apple Music Now Playing README (English)",
-      "contributor": null,
-      "file_type": "concept",
-      "norm_label": "ui automation",
-      "source_file": "README.fr.md",
       "source_location": null,
       "source_url": null
     },
@@ -3944,51 +3892,6 @@
       "file_type": "document",
       "norm_label": "apple music now playing readme (english)",
       "source_file": "README.md",
-      "source_location": null,
-      "source_url": null
-    },
-    {
-      "id": "readme_fr",
-      "label": "Apple Music Now Playing README (French)",
-      "_origin": "semantic",
-      "author": null,
-      "captured_at": null,
-      "community": 5,
-      "community_name": "Apple Music Now Playing README (English)",
-      "contributor": null,
-      "file_type": "document",
-      "norm_label": "apple music now playing readme (french)",
-      "source_file": "README.fr.md",
-      "source_location": null,
-      "source_url": null
-    },
-    {
-      "id": "readme_fr_shuffle_repeat_limitation",
-      "label": "Shuffle/Repeat Not Controllable",
-      "_origin": "semantic",
-      "author": null,
-      "captured_at": null,
-      "community": 5,
-      "community_name": "Apple Music Now Playing README (English)",
-      "contributor": null,
-      "file_type": "rationale",
-      "norm_label": "shuffle/repeat not controllable",
-      "source_file": "README.fr.md",
-      "source_location": null,
-      "source_url": null
-    },
-    {
-      "id": "readme_fr_steelseries_sonar_limitation",
-      "label": "Third-Party Audio Mixing Volume Limitation",
-      "_origin": "semantic",
-      "author": null,
-      "captured_at": null,
-      "community": 5,
-      "community_name": "Apple Music Now Playing README (English)",
-      "contributor": null,
-      "file_type": "rationale",
-      "norm_label": "third-party audio mixing volume limitation",
-      "source_file": "README.fr.md",
       "source_location": null,
       "source_url": null
     },
@@ -4904,18 +4807,6 @@
       "weight": 1.0
     },
     {
-      "source": "src_actions_now_playing_artistfeedback",
-      "target": "src_actions_now_playing_scrolltext",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L204",
-      "weight": 1.0
-    },
-    {
       "source": "src_actions_now_playing_fits",
       "target": "src_text_metrics_textwidthpx",
       "relation": "calls",
@@ -4924,7 +4815,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L122",
+      "source_location": "L109",
       "weight": 1.0
     },
     {
@@ -4936,59 +4827,35 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L409",
+      "source_location": "L324",
       "weight": 1.0
     },
     {
       "source": "src_actions_now_playing_nowplayingaction_fetchnext",
-      "target": "src_actions_now_playing_syncmode",
+      "target": "src_actions_now_playing_makefieldstate",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L400",
+      "source_location": "L315",
       "weight": 1.0
     },
     {
       "source": "src_actions_now_playing_nowplayingaction_fetchnext",
-      "target": "src_actions_now_playing_artistfeedback",
+      "target": "src_actions_now_playing_scrolltext",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L401",
+      "source_location": "L316",
       "weight": 1.0
     },
     {
-      "source": "src_actions_now_playing_nowplayingaction_fetchnext",
-      "target": "src_actions_now_playing_titlefeedback",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L401",
-      "weight": 1.0
-    },
-    {
-      "source": "src_actions_now_playing_nowplayingaction_maybefetchnext",
-      "target": "src_actions_now_playing_remainingms",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L381",
-      "weight": 1.0
-    },
-    {
-      "source": "src_actions_now_playing_nowplayingaction_maybefetchnext",
+      "source": "src_actions_now_playing_nowplayingaction_ondidreceivesettings",
       "target": "src_actions_now_playing_nowplayingaction_fetchnext",
       "relation": "calls",
       "_origin": "ast",
@@ -4996,43 +4863,19 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L385",
+      "source_location": "L203",
       "weight": 1.0
     },
     {
       "source": "src_actions_now_playing_nowplayingaction_ondidreceivesettings",
-      "target": "src_actions_now_playing_syncmode",
+      "target": "src_actions_now_playing_makefieldstate",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L263",
-      "weight": 1.0
-    },
-    {
-      "source": "src_actions_now_playing_nowplayingaction_ondidreceivesettings",
-      "target": "src_actions_now_playing_artistfeedback",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L264",
-      "weight": 1.0
-    },
-    {
-      "source": "src_actions_now_playing_nowplayingaction_ondidreceivesettings",
-      "target": "src_actions_now_playing_titlefeedback",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L264",
+      "source_location": "L205",
       "weight": 1.0
     },
     {
@@ -5044,7 +4887,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L225",
+      "source_location": "L167",
       "weight": 1.0
     },
     {
@@ -5056,7 +4899,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L234",
+      "source_location": "L176",
       "weight": 1.0
     },
     {
@@ -5068,7 +4911,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L235",
+      "source_location": "L177",
       "weight": 1.0
     },
     {
@@ -5080,7 +4923,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L249",
+      "source_location": "L191",
       "weight": 1.0
     },
     {
@@ -5092,7 +4935,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L317",
+      "source_location": "L254",
       "weight": 1.0
     },
     {
@@ -5104,7 +4947,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L317",
+      "source_location": "L254",
       "weight": 1.0
     },
     {
@@ -5116,7 +4959,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L333",
+      "source_location": "L270",
       "weight": 1.0
     },
     {
@@ -5128,31 +4971,19 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L350",
+      "source_location": "L279",
       "weight": 1.0
     },
     {
       "source": "src_actions_now_playing_nowplayingaction_render",
-      "target": "src_actions_now_playing_nowplayingaction_maybefetchnext",
+      "target": "src_actions_now_playing_nowplayingaction_fetchnext",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L360",
-      "weight": 1.0
-    },
-    {
-      "source": "src_actions_now_playing_nowplayingaction_render",
-      "target": "src_actions_now_playing_syncmode",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L361",
+      "source_location": "L285",
       "weight": 1.0
     },
     {
@@ -5164,91 +4995,19 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L363",
+      "source_location": "L288",
       "weight": 1.0
     },
     {
       "source": "src_actions_now_playing_nowplayingaction_render",
-      "target": "src_actions_now_playing_titlefeedback",
+      "target": "src_actions_now_playing_scrolltext",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L367",
-      "weight": 1.0
-    },
-    {
-      "source": "src_actions_now_playing_nowplayingaction_render",
-      "target": "src_actions_now_playing_artistfeedback",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L368",
-      "weight": 1.0
-    },
-    {
-      "source": "src_actions_now_playing_nowplayingaction_tickscroll",
-      "target": "src_actions_now_playing_nowplayingaction_maybefetchnext",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L429",
-      "weight": 1.0
-    },
-    {
-      "source": "src_actions_now_playing_nowplayingaction_tickscroll",
-      "target": "src_actions_now_playing_syncmode",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L430",
-      "weight": 1.0
-    },
-    {
-      "source": "src_actions_now_playing_nowplayingaction_tickscroll",
-      "target": "src_actions_now_playing_timefeedback",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L431",
-      "weight": 1.0
-    },
-    {
-      "source": "src_actions_now_playing_nowplayingaction_tickscroll",
-      "target": "src_actions_now_playing_artistfeedback",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L436",
-      "weight": 1.0
-    },
-    {
-      "source": "src_actions_now_playing_nowplayingaction_tickscroll",
-      "target": "src_actions_now_playing_titlefeedback",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L436",
+      "source_location": "L292",
       "weight": 1.0
     },
     {
@@ -5260,19 +5019,19 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L439",
+      "source_location": "L349",
       "weight": 1.0
     },
     {
       "source": "src_actions_now_playing_nowplayingaction_tickscroll",
-      "target": "src_actions_now_playing_titlespec",
+      "target": "src_actions_now_playing_timefeedback",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L439",
+      "source_location": "L350",
       "weight": 1.0
     },
     {
@@ -5284,19 +5043,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L446",
-      "weight": 1.0
-    },
-    {
-      "source": "src_actions_now_playing_remainingms",
-      "target": "src_actions_now_playing_positionof",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L175",
+      "source_location": "L359",
       "weight": 1.0
     },
     {
@@ -5308,7 +5055,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L127",
+      "source_location": "L114",
       "weight": 1.0
     },
     {
@@ -5320,31 +5067,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L135",
-      "weight": 1.0
-    },
-    {
-      "source": "src_actions_now_playing_syncmode",
-      "target": "src_actions_now_playing_wantedmode",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L209",
-      "weight": 1.0
-    },
-    {
-      "source": "src_actions_now_playing_syncmode",
-      "target": "src_actions_now_playing_makefieldstate",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L214",
+      "source_location": "L122",
       "weight": 1.0
     },
     {
@@ -5356,7 +5079,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L147",
+      "source_location": "L134",
       "weight": 1.0
     },
     {
@@ -5368,7 +5091,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L109",
+      "source_location": "L96",
       "weight": 1.0
     },
     {
@@ -5380,43 +5103,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L112",
-      "weight": 1.0
-    },
-    {
-      "source": "src_actions_now_playing_titlefeedback",
-      "target": "src_actions_now_playing_scrolltext",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L197",
-      "weight": 1.0
-    },
-    {
-      "source": "src_actions_now_playing_titlefeedback",
-      "target": "src_actions_now_playing_titlespec",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L197",
-      "weight": 1.0
-    },
-    {
-      "source": "src_actions_now_playing_wantedmode",
-      "target": "src_actions_now_playing_remainingms",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L182",
+      "source_location": "L99",
       "weight": 1.0
     },
     {
@@ -5572,7 +5259,7 @@
       "confidence_score": 1.0,
       "context": "decorator",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L219",
+      "source_location": "L161",
       "weight": 1.0
     },
     {
@@ -7129,7 +6816,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L297",
+      "source_location": "L241",
       "weight": 1.0
     },
     {
@@ -7990,35 +7677,13 @@
     },
     {
       "source": "src_actions_now_playing",
-      "target": "src_actions_now_playing_positionof",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L100",
-      "weight": 1.0
-    },
-    {
-      "source": "src_actions_now_playing",
-      "target": "src_actions_now_playing_timefeedback",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L105",
-      "weight": 1.0
-    },
-    {
-      "source": "src_actions_now_playing",
       "target": "src_actions_now_playing_makefieldstate",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L117",
+      "source_location": "L104",
       "weight": 1.0
     },
     {
@@ -8029,7 +7694,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L121",
+      "source_location": "L108",
       "weight": 1.0
     },
     {
@@ -8040,7 +7705,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L126",
+      "source_location": "L113",
+      "weight": 1.0
+    },
+    {
+      "source": "src_actions_now_playing",
+      "target": "src_actions_now_playing_tickfield",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/actions/now-playing.ts",
+      "source_location": "L133",
       "weight": 1.0
     },
     {
@@ -8056,46 +7732,13 @@
     },
     {
       "source": "src_actions_now_playing",
-      "target": "src_actions_now_playing_tickfield",
+      "target": "src_actions_now_playing_nowplayingaction",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L146",
-      "weight": 1.0
-    },
-    {
-      "source": "src_actions_now_playing",
-      "target": "src_actions_now_playing_remainingms",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L174",
-      "weight": 1.0
-    },
-    {
-      "source": "src_actions_now_playing",
-      "target": "src_actions_now_playing_wantedmode",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L178",
-      "weight": 1.0
-    },
-    {
-      "source": "src_actions_now_playing",
-      "target": "src_actions_now_playing_titlespec",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L189",
+      "source_location": "L162",
       "weight": 1.0
     },
     {
@@ -8111,50 +7754,6 @@
     },
     {
       "source": "src_actions_now_playing",
-      "target": "src_actions_now_playing_titlefeedback",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L194",
-      "weight": 1.0
-    },
-    {
-      "source": "src_actions_now_playing",
-      "target": "src_actions_now_playing_artistfeedback",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L203",
-      "weight": 1.0
-    },
-    {
-      "source": "src_actions_now_playing",
-      "target": "src_actions_now_playing_syncmode",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L208",
-      "weight": 1.0
-    },
-    {
-      "source": "src_actions_now_playing",
-      "target": "src_actions_now_playing_nowplayingaction",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L220",
-      "weight": 1.0
-    },
-    {
-      "source": "src_actions_now_playing",
       "target": "src_actions_now_playing_timeline",
       "relation": "contains",
       "_origin": "ast",
@@ -8166,24 +7765,13 @@
     },
     {
       "source": "src_actions_now_playing",
-      "target": "src_actions_now_playing_mode",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L34",
-      "weight": 1.0
-    },
-    {
-      "source": "src_actions_now_playing",
       "target": "src_actions_now_playing_dialstate",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L36",
+      "source_location": "L33",
       "weight": 1.0
     },
     {
@@ -8194,7 +7782,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L59",
+      "source_location": "L51",
       "weight": 1.0
     },
     {
@@ -8205,7 +7793,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L60",
+      "source_location": "L52",
       "weight": 1.0
     },
     {
@@ -8216,18 +7804,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L61",
+      "source_location": "L53",
       "weight": 1.0
     },
     {
       "source": "src_actions_now_playing",
-      "target": "src_actions_now_playing_label_spec",
+      "target": "src_actions_now_playing_next_spec",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L62",
+      "source_location": "L54",
       "weight": 1.0
     },
     {
@@ -8238,7 +7826,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L75",
+      "source_location": "L62",
       "weight": 1.0
     },
     {
@@ -8249,12 +7837,34 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L81",
+      "source_location": "L68",
       "weight": 1.0
     },
     {
       "source": "src_actions_now_playing",
       "target": "src_actions_now_playing_formattime",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/actions/now-playing.ts",
+      "source_location": "L79",
+      "weight": 1.0
+    },
+    {
+      "source": "src_actions_now_playing",
+      "target": "src_actions_now_playing_positionof",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/actions/now-playing.ts",
+      "source_location": "L87",
+      "weight": 1.0
+    },
+    {
+      "source": "src_actions_now_playing",
+      "target": "src_actions_now_playing_timefeedback",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -9415,7 +9025,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L225",
+      "source_location": "L167",
       "weight": 1.0
     },
     {
@@ -9426,7 +9036,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L227",
+      "source_location": "L169",
       "weight": 1.0
     },
     {
@@ -9437,7 +9047,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L238",
+      "source_location": "L180",
       "weight": 1.0
     },
     {
@@ -9448,7 +9058,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L253",
+      "source_location": "L195",
       "weight": 1.0
     },
     {
@@ -9459,7 +9069,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L268",
+      "source_location": "L212",
       "weight": 1.0
     },
     {
@@ -9470,7 +9080,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L289",
+      "source_location": "L233",
       "weight": 1.0
     },
     {
@@ -9481,7 +9091,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L293",
+      "source_location": "L237",
       "weight": 1.0
     },
     {
@@ -9492,18 +9102,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L297",
-      "weight": 1.0
-    },
-    {
-      "source": "src_actions_now_playing_nowplayingaction",
-      "target": "src_actions_now_playing_nowplayingaction_maybefetchnext",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L377",
+      "source_location": "L241",
       "weight": 1.0
     },
     {
@@ -9514,7 +9113,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L389",
+      "source_location": "L303",
       "weight": 1.0
     },
     {
@@ -9525,7 +9124,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L405",
+      "source_location": "L320",
       "weight": 1.0
     },
     {
@@ -9536,7 +9135,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L412",
+      "source_location": "L327",
       "weight": 1.0
     },
     {
@@ -9547,7 +9146,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L419",
+      "source_location": "L334",
       "weight": 1.0
     },
     {
@@ -10605,5 +10204,5 @@
       "source_file": "README.md"
     }
   ],
-  "built_at_commit": "ddf34bdc6fb1987b241b9ba99e21a62055d26266"
+  "built_at_commit": "8b40b8889a5cac03cce32079605c500a0952bffa"
 }

@@ -42,9 +42,9 @@
     "semantic_hash": ""
   },
   "src/actions/now-playing.ts": {
-    "mtime": 1791584690.1996806,
-    "seen": 1791584777.6906285,
-    "ast_hash": "72b53648586b37eb74bc75fc79d5c735",
+    "mtime": 1791585439.6541712,
+    "seen": 1791585547.0612934,
+    "ast_hash": "f13e91204119cef846d2c9336e350a81",
     "semantic_hash": ""
   },
   "src/actions/play-media.ts": {
@@ -90,26 +90,26 @@
     "semantic_hash": ""
   },
   "README.fr.md": {
-    "mtime": 1791584525.4959702,
-    "seen": 1791584626.9458933,
-    "ast_hash": "72f60a039370ca28f0252701302ad509",
+    "mtime": 1791585439.6489954,
+    "seen": 1791585547.061308,
+    "ast_hash": "d59acc92c59b6815912a30d17fb8621b",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1791584525.4954414,
-    "seen": 1791584626.9458954,
-    "ast_hash": "f9e9edbb2aa11b13f5db8dc3a60bb73c",
+    "mtime": 1791585439.6500373,
+    "seen": 1791585547.0613098,
+    "ast_hash": "ccb992a537e50a8e9b2a8e17539ebce3",
     "semantic_hash": ""
   },
   "com.alexisvscsharp.nowplaying.sdPlugin/layouts/now-playing.json": {
-    "mtime": 1791584525.4938533,
-    "seen": 1791584626.9458482,
-    "ast_hash": "5aefd3b5b6286cf1fbbf9e8fb2a94722",
+    "mtime": 1791585439.651592,
+    "seen": 1791585547.0612726,
+    "ast_hash": "98f4cc6298e4b5812f8334a86cf6b98b",
     "semantic_hash": ""
   },
   "com.alexisvscsharp.nowplaying.sdPlugin/manifest.json": {
-    "mtime": 1791584772.1669536,
-    "seen": 1791584777.6906073,
+    "mtime": 1791585541.7984922,
+    "seen": 1791585547.0612755,
     "ast_hash": "3163980552660205d133422490165b5d",
     "semantic_hash": ""
   },
@@ -120,9 +120,9 @@
     "semantic_hash": ""
   },
   "com.alexisvscsharp.nowplaying.sdPlugin/ui/now-playing.html": {
-    "mtime": 1791584525.4943666,
-    "seen": 1791584626.945897,
-    "ast_hash": "b28c8ac1bf68a2d0961704d60fda58ee",
+    "mtime": 1791585439.6526241,
+    "seen": 1791585547.0613115,
+    "ast_hash": "6d0fc05029c8bd54e35ba1a4adc0d065",
     "semantic_hash": ""
   },
   "com.alexisvscsharp.nowplaying.sdPlugin/ui/play-media.html": {

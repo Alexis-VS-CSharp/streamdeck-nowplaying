@@ -1,17 +1,17 @@
 # Graph Report - streamdeck-applemusic-nowplaying  (2026-10-10)
 
 ## Corpus Check
-- 21 files · ~11,907 words
+- 21 files · ~11,898 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 7 file(s) not represented in the graph (top: (none) 3, .exe 2, .WinMD 1)
 
 ## Summary
-- 327 nodes · 538 edges · 14 communities (11 shown, 3 thin omitted)
+- 327 nodes · 537 edges · 14 communities (11 shown, 3 thin omitted)
 - Extraction: 96% EXTRACTED · 4% INFERRED · 0% AMBIGUOUS · INFERRED: 21 edges (avg confidence: 0.82)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `b7cbd852`
+- Built from commit: `ddf34bdc`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
