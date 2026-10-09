@@ -210,7 +210,6 @@ function syncMode(state: DialState): boolean {
 	if (wanted === state.mode) {
 		return false;
 	}
-	streamDeck.logger.info(`TMPDEBUG dial mode -> ${wanted} (remaining ${Math.round(remainingMs(state) / 1000)}s)`);
 	state.mode = wanted;
 	state.title = makeFieldState(wanted === "normal" ? state.curTitle : wanted === "label" ? NEXT_LABEL : state.nextTitle);
 	state.artist = makeFieldState(wanted === "normal" ? state.curArtist : wanted === "label" ? "" : state.nextArtist);
