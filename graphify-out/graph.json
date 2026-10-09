@@ -331,7 +331,7 @@
       "file_type": "code",
       "norm_label": "nowplayingaction",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L221"
+      "source_location": "L220"
     },
     {
       "id": "src_actions_now_playing_nowplayingsettings",
@@ -1604,7 +1604,7 @@
       "file_type": "code",
       "norm_label": ".ensurescrolltimer()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L406"
+      "source_location": "L405"
     },
     {
       "id": "src_actions_now_playing_nowplayingaction_fetchnext",
@@ -1616,7 +1616,7 @@
       "file_type": "code",
       "norm_label": ".fetchnext()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L390"
+      "source_location": "L389"
     },
     {
       "id": "src_actions_now_playing_nowplayingaction_maybefetchnext",
@@ -1628,7 +1628,7 @@
       "file_type": "code",
       "norm_label": ".maybefetchnext()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L378"
+      "source_location": "L377"
     },
     {
       "id": "src_actions_now_playing_nowplayingaction_ondialdown",
@@ -1640,7 +1640,7 @@
       "file_type": "code",
       "norm_label": ".ondialdown()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L269"
+      "source_location": "L268"
     },
     {
       "id": "src_actions_now_playing_nowplayingaction_ondialrotate",
@@ -1652,7 +1652,7 @@
       "file_type": "code",
       "norm_label": ".ondialrotate()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L294"
+      "source_location": "L293"
     },
     {
       "id": "src_actions_now_playing_nowplayingaction_ondidreceivesettings",
@@ -1664,7 +1664,7 @@
       "file_type": "code",
       "norm_label": ".ondidreceivesettings()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L254"
+      "source_location": "L253"
     },
     {
       "id": "src_actions_now_playing_nowplayingaction_ontouchtap",
@@ -1676,7 +1676,7 @@
       "file_type": "code",
       "norm_label": ".ontouchtap()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L290"
+      "source_location": "L289"
     },
     {
       "id": "src_actions_now_playing_nowplayingaction_onupdate",
@@ -1688,7 +1688,7 @@
       "file_type": "code",
       "norm_label": ".onupdate()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L226"
+      "source_location": "L225"
     },
     {
       "id": "src_actions_now_playing_nowplayingaction_onwillappear",
@@ -1700,7 +1700,7 @@
       "file_type": "code",
       "norm_label": ".onwillappear()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L228"
+      "source_location": "L227"
     },
     {
       "id": "src_actions_now_playing_nowplayingaction_onwilldisappear",
@@ -1712,7 +1712,7 @@
       "file_type": "code",
       "norm_label": ".onwilldisappear()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L239"
+      "source_location": "L238"
     },
     {
       "id": "src_actions_now_playing_nowplayingaction_render",
@@ -1724,7 +1724,7 @@
       "file_type": "code",
       "norm_label": ".render()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L298"
+      "source_location": "L297"
     },
     {
       "id": "src_actions_now_playing_nowplayingaction_stopscrolltimer",
@@ -1736,7 +1736,7 @@
       "file_type": "code",
       "norm_label": ".stopscrolltimer()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L413"
+      "source_location": "L412"
     },
     {
       "id": "src_actions_now_playing_nowplayingaction_tickscroll",
@@ -1748,7 +1748,7 @@
       "file_type": "code",
       "norm_label": ".tickscroll()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L420"
+      "source_location": "L419"
     },
     {
       "id": "src_actions_now_playing_positionof",
@@ -4936,12 +4936,24 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L410",
+      "source_location": "L409",
       "weight": 1.0
     },
     {
       "source": "src_actions_now_playing_nowplayingaction_fetchnext",
       "target": "src_actions_now_playing_syncmode",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/actions/now-playing.ts",
+      "source_location": "L400",
+      "weight": 1.0
+    },
+    {
+      "source": "src_actions_now_playing_nowplayingaction_fetchnext",
+      "target": "src_actions_now_playing_artistfeedback",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -4953,18 +4965,6 @@
     },
     {
       "source": "src_actions_now_playing_nowplayingaction_fetchnext",
-      "target": "src_actions_now_playing_artistfeedback",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L402",
-      "weight": 1.0
-    },
-    {
-      "source": "src_actions_now_playing_nowplayingaction_fetchnext",
       "target": "src_actions_now_playing_titlefeedback",
       "relation": "calls",
       "_origin": "ast",
@@ -4972,7 +4972,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L402",
+      "source_location": "L401",
       "weight": 1.0
     },
     {
@@ -4984,7 +4984,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L382",
+      "source_location": "L381",
       "weight": 1.0
     },
     {
@@ -4996,12 +4996,24 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L386",
+      "source_location": "L385",
       "weight": 1.0
     },
     {
       "source": "src_actions_now_playing_nowplayingaction_ondidreceivesettings",
       "target": "src_actions_now_playing_syncmode",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/actions/now-playing.ts",
+      "source_location": "L263",
+      "weight": 1.0
+    },
+    {
+      "source": "src_actions_now_playing_nowplayingaction_ondidreceivesettings",
+      "target": "src_actions_now_playing_artistfeedback",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5013,18 +5025,6 @@
     },
     {
       "source": "src_actions_now_playing_nowplayingaction_ondidreceivesettings",
-      "target": "src_actions_now_playing_artistfeedback",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L265",
-      "weight": 1.0
-    },
-    {
-      "source": "src_actions_now_playing_nowplayingaction_ondidreceivesettings",
       "target": "src_actions_now_playing_titlefeedback",
       "relation": "calls",
       "_origin": "ast",
@@ -5032,7 +5032,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L265",
+      "source_location": "L264",
       "weight": 1.0
     },
     {
@@ -5044,7 +5044,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L226",
+      "source_location": "L225",
       "weight": 1.0
     },
     {
@@ -5056,7 +5056,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L235",
+      "source_location": "L234",
       "weight": 1.0
     },
     {
@@ -5068,7 +5068,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L236",
+      "source_location": "L235",
       "weight": 1.0
     },
     {
@@ -5080,7 +5080,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L250",
+      "source_location": "L249",
       "weight": 1.0
     },
     {
@@ -5092,7 +5092,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L318",
+      "source_location": "L317",
       "weight": 1.0
     },
     {
@@ -5104,7 +5104,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L318",
+      "source_location": "L317",
       "weight": 1.0
     },
     {
@@ -5116,7 +5116,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L334",
+      "source_location": "L333",
       "weight": 1.0
     },
     {
@@ -5128,12 +5128,24 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L351",
+      "source_location": "L350",
       "weight": 1.0
     },
     {
       "source": "src_actions_now_playing_nowplayingaction_render",
       "target": "src_actions_now_playing_nowplayingaction_maybefetchnext",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/actions/now-playing.ts",
+      "source_location": "L360",
+      "weight": 1.0
+    },
+    {
+      "source": "src_actions_now_playing_nowplayingaction_render",
+      "target": "src_actions_now_playing_syncmode",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5145,18 +5157,6 @@
     },
     {
       "source": "src_actions_now_playing_nowplayingaction_render",
-      "target": "src_actions_now_playing_syncmode",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L362",
-      "weight": 1.0
-    },
-    {
-      "source": "src_actions_now_playing_nowplayingaction_render",
       "target": "src_actions_now_playing_timefeedback",
       "relation": "calls",
       "_origin": "ast",
@@ -5164,7 +5164,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L364",
+      "source_location": "L363",
       "weight": 1.0
     },
     {
@@ -5176,7 +5176,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L368",
+      "source_location": "L367",
       "weight": 1.0
     },
     {
@@ -5188,7 +5188,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L369",
+      "source_location": "L368",
       "weight": 1.0
     },
     {
@@ -5200,7 +5200,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L430",
+      "source_location": "L429",
       "weight": 1.0
     },
     {
@@ -5212,7 +5212,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L431",
+      "source_location": "L430",
       "weight": 1.0
     },
     {
@@ -5224,7 +5224,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L432",
+      "source_location": "L431",
       "weight": 1.0
     },
     {
@@ -5236,7 +5236,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L437",
+      "source_location": "L436",
       "weight": 1.0
     },
     {
@@ -5248,7 +5248,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L437",
+      "source_location": "L436",
       "weight": 1.0
     },
     {
@@ -5260,7 +5260,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L440",
+      "source_location": "L439",
       "weight": 1.0
     },
     {
@@ -5272,7 +5272,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L440",
+      "source_location": "L439",
       "weight": 1.0
     },
     {
@@ -5284,7 +5284,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L447",
+      "source_location": "L446",
       "weight": 1.0
     },
     {
@@ -5337,18 +5337,6 @@
     },
     {
       "source": "src_actions_now_playing_syncmode",
-      "target": "src_actions_now_playing_remainingms",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L213",
-      "weight": 1.0
-    },
-    {
-      "source": "src_actions_now_playing_syncmode",
       "target": "src_actions_now_playing_makefieldstate",
       "relation": "calls",
       "_origin": "ast",
@@ -5356,7 +5344,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L215",
+      "source_location": "L214",
       "weight": 1.0
     },
     {
@@ -5584,7 +5572,7 @@
       "confidence_score": 1.0,
       "context": "decorator",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L220",
+      "source_location": "L219",
       "weight": 1.0
     },
     {
@@ -7141,7 +7129,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L298",
+      "source_location": "L297",
       "weight": 1.0
     },
     {
@@ -8162,7 +8150,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L221",
+      "source_location": "L220",
       "weight": 1.0
     },
     {
@@ -9427,7 +9415,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L226",
+      "source_location": "L225",
       "weight": 1.0
     },
     {
@@ -9438,7 +9426,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L228",
+      "source_location": "L227",
       "weight": 1.0
     },
     {
@@ -9449,7 +9437,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L239",
+      "source_location": "L238",
       "weight": 1.0
     },
     {
@@ -9460,7 +9448,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L254",
+      "source_location": "L253",
       "weight": 1.0
     },
     {
@@ -9471,7 +9459,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L269",
+      "source_location": "L268",
       "weight": 1.0
     },
     {
@@ -9482,7 +9470,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L290",
+      "source_location": "L289",
       "weight": 1.0
     },
     {
@@ -9493,7 +9481,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L294",
+      "source_location": "L293",
       "weight": 1.0
     },
     {
@@ -9504,7 +9492,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L298",
+      "source_location": "L297",
       "weight": 1.0
     },
     {
@@ -9515,7 +9503,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L378",
+      "source_location": "L377",
       "weight": 1.0
     },
     {
@@ -9526,7 +9514,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L390",
+      "source_location": "L389",
       "weight": 1.0
     },
     {
@@ -9537,7 +9525,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L406",
+      "source_location": "L405",
       "weight": 1.0
     },
     {
@@ -9548,7 +9536,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L413",
+      "source_location": "L412",
       "weight": 1.0
     },
     {
@@ -9559,7 +9547,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L420",
+      "source_location": "L419",
       "weight": 1.0
     },
     {
@@ -10617,5 +10605,5 @@
       "source_file": "README.md"
     }
   ],
-  "built_at_commit": "b7cbd852666421405ef0b5679170cceeddc923ba"
+  "built_at_commit": "ddf34bdc6fb1987b241b9ba99e21a62055d26266"
 }

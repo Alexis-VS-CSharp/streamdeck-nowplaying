@@ -30,9 +30,9 @@
       "type": "text",
       "rect": [
         106,
-        8,
+        3,
         90,
-        40
+        22
       ],
       "alignment": "left",
       "color": "#FFFFFF",
@@ -49,9 +49,9 @@
       "type": "text",
       "rect": [
         106,
-        54,
+        26,
         90,
-        20
+        17
       ],
       "alignment": "left",
       "color": "#B0B0B0",
@@ -59,6 +59,24 @@
         "size": 12
       },
       "text-overflow": "ellipsis",
+      "value": "",
+      "zOrder": 1
+    },
+    {
+      "key": "next",
+      "type": "text",
+      "rect": [
+        106,
+        46,
+        90,
+        15
+      ],
+      "alignment": "left",
+      "color": "#8A8A8A",
+      "font": {
+        "size": 10
+      },
+      "text-overflow": "clip",
       "value": "",
       "zOrder": 1
     },
