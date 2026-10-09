@@ -136,7 +136,7 @@
       "file_type": "code",
       "norm_label": "nowplayingservice",
       "source_file": "src/now-playing-service.ts",
-      "source_location": "L123"
+      "source_location": "L144"
     },
     {
       "id": "build_bridge_nowplayingbridge_iaudiosessioncontrol",
@@ -149,7 +149,7 @@
       "file_type": "code",
       "norm_label": "iaudiosessioncontrol",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L440"
+      "source_location": "L441"
     },
     {
       "id": "build_bridge_nowplayingbridge_iaudiosessioncontrol2",
@@ -162,20 +162,7 @@
       "file_type": "code",
       "norm_label": "iaudiosessioncontrol2",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L454"
-    },
-    {
-      "id": "build_bridge_nowplayingbridge_iaudiosessionmanager2",
-      "label": "IAudioSessionManager2",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "IAudioSessionControl2",
-      "file_type": "code",
-      "norm_label": "iaudiosessionmanager2",
-      "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L421"
+      "source_location": "L455"
     },
     {
       "id": "build_bridge_nowplayingbridge_isimpleaudiovolume",
@@ -188,7 +175,33 @@
       "file_type": "code",
       "norm_label": "isimpleaudiovolume",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L473"
+      "source_location": "L474"
+    },
+    {
+      "id": "build_bridge_nowplayingbridge_applemusicui",
+      "label": "AppleMusicUi",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "AppleMusicUi",
+      "file_type": "code",
+      "norm_label": "applemusicui",
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L488"
+    },
+    {
+      "id": "src_actions_favorite_favoriteaction",
+      "label": "FavoriteAction",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "FavoriteAction",
+      "file_type": "code",
+      "norm_label": "favoriteaction",
+      "source_file": "src/actions/favorite.ts",
+      "source_location": "L11"
     },
     {
       "id": "build_bridge_nowplayingbridge_applemusicvolume",
@@ -201,7 +214,7 @@
       "file_type": "code",
       "norm_label": "applemusicvolume",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L234"
+      "source_location": "L235"
     },
     {
       "id": "build_bridge_nowplayingbridge_iaudiosessionenumerator",
@@ -214,7 +227,20 @@
       "file_type": "code",
       "norm_label": "iaudiosessionenumerator",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L433"
+      "source_location": "L434"
+    },
+    {
+      "id": "build_bridge_nowplayingbridge_iaudiosessionmanager2",
+      "label": "IAudioSessionManager2",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "NowPlayingBridge.cs",
+      "file_type": "code",
+      "norm_label": "iaudiosessionmanager2",
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L422"
     },
     {
       "id": "build_bridge_nowplayingbridge_immdevice",
@@ -227,7 +253,7 @@
       "file_type": "code",
       "norm_label": "immdevice",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L412"
+      "source_location": "L413"
     },
     {
       "id": "build_bridge_nowplayingbridge_immdevicecollection",
@@ -240,7 +266,7 @@
       "file_type": "code",
       "norm_label": "immdevicecollection",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L405"
+      "source_location": "L406"
     },
     {
       "id": "build_bridge_nowplayingbridge_immdeviceenumerator",
@@ -253,7 +279,7 @@
       "file_type": "code",
       "norm_label": "immdeviceenumerator",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L395"
+      "source_location": "L396"
     },
     {
       "id": "src_actions_now_playing_dialstate",
@@ -266,7 +292,7 @@
       "file_type": "code",
       "norm_label": "dialstate",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L31"
+      "source_location": "L33"
     },
     {
       "id": "src_actions_now_playing_fieldstate",
@@ -279,7 +305,7 @@
       "file_type": "code",
       "norm_label": "fieldstate",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L17"
+      "source_location": "L19"
     },
     {
       "id": "src_actions_now_playing_nowplayingaction",
@@ -292,7 +318,7 @@
       "file_type": "code",
       "norm_label": "nowplayingaction",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L156"
+      "source_location": "L162"
     },
     {
       "id": "src_actions_now_playing_nowplayingsettings",
@@ -305,7 +331,7 @@
       "file_type": "code",
       "norm_label": "nowplayingsettings",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L13"
+      "source_location": "L14"
     },
     {
       "id": "src_actions_now_playing_scrollspec",
@@ -318,7 +344,7 @@
       "file_type": "code",
       "norm_label": "scrollspec",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L47"
+      "source_location": "L51"
     },
     {
       "id": "src_actions_now_playing_timeline",
@@ -331,7 +357,7 @@
       "file_type": "code",
       "norm_label": "timeline",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L24"
+      "source_location": "L26"
     },
     {
       "id": "build_bridge_nowplayingbridge_entrypoint",
@@ -344,7 +370,7 @@
       "file_type": "code",
       "norm_label": "entrypoint",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L482"
+      "source_location": "L656"
     },
     {
       "id": "build_bridge_nowplayingbridge_nowplayingbridge",
@@ -357,7 +383,7 @@
       "file_type": "code",
       "norm_label": "nowplayingbridge",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L10"
+      "source_location": "L11"
     },
     {
       "id": "src_actions_mute_muteaction_onkeydown",
@@ -513,7 +539,7 @@
       "file_type": "code",
       "norm_label": ".acquire()",
       "source_file": "src/now-playing-service.ts",
-      "source_location": "L42"
+      "source_location": "L50"
     },
     {
       "id": "src_now_playing_service_nowplayingservice_control",
@@ -525,7 +551,7 @@
       "file_type": "code",
       "norm_label": ".control()",
       "source_file": "src/now-playing-service.ts",
-      "source_location": "L96"
+      "source_location": "L104"
     },
     {
       "id": "src_now_playing_service_nowplayingservice_controlwithoutput",
@@ -537,7 +563,7 @@
       "file_type": "code",
       "norm_label": ".controlwithoutput()",
       "source_file": "src/now-playing-service.ts",
-      "source_location": "L102"
+      "source_location": "L110"
     },
     {
       "id": "src_now_playing_service_nowplayingservice_latest",
@@ -549,7 +575,7 @@
       "file_type": "code",
       "norm_label": ".latest()",
       "source_file": "src/now-playing-service.ts",
-      "source_location": "L38"
+      "source_location": "L46"
     },
     {
       "id": "src_now_playing_service_nowplayingservice_release",
@@ -561,7 +587,7 @@
       "file_type": "code",
       "norm_label": ".release()",
       "source_file": "src/now-playing-service.ts",
-      "source_location": "L89"
+      "source_location": "L97"
     },
     {
       "id": "src_now_playing_service_nowplayingservice_startwatcher",
@@ -573,7 +599,7 @@
       "file_type": "code",
       "norm_label": ".startwatcher()",
       "source_file": "src/now-playing-service.ts",
-      "source_location": "L53"
+      "source_location": "L61"
     },
     {
       "id": "src_now_playing_service_nowplayingservice_stopwatcher",
@@ -585,7 +611,19 @@
       "file_type": "code",
       "norm_label": ".stopwatcher()",
       "source_file": "src/now-playing-service.ts",
-      "source_location": "L115"
+      "source_location": "L136"
+    },
+    {
+      "id": "src_now_playing_service_nowplayingservice_uicontrol",
+      "label": ".uiControl()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "plugin.ts",
+      "file_type": "code",
+      "norm_label": ".uicontrol()",
+      "source_file": "src/now-playing-service.ts",
+      "source_location": "L129"
     },
     {
       "id": "build_bridge_nowplayingbridge_iaudiosessioncontrol2_getdisplayname",
@@ -597,7 +635,7 @@
       "file_type": "code",
       "norm_label": ".getdisplayname()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L458"
+      "source_location": "L459"
     },
     {
       "id": "build_bridge_nowplayingbridge_iaudiosessioncontrol2_getgroupingparam",
@@ -609,7 +647,7 @@
       "file_type": "code",
       "norm_label": ".getgroupingparam()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L462"
+      "source_location": "L463"
     },
     {
       "id": "build_bridge_nowplayingbridge_iaudiosessioncontrol2_geticonpath",
@@ -621,7 +659,7 @@
       "file_type": "code",
       "norm_label": ".geticonpath()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L460"
+      "source_location": "L461"
     },
     {
       "id": "build_bridge_nowplayingbridge_iaudiosessioncontrol2_getprocessid",
@@ -633,7 +671,7 @@
       "file_type": "code",
       "norm_label": ".getprocessid()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L468"
+      "source_location": "L469"
     },
     {
       "id": "build_bridge_nowplayingbridge_iaudiosessioncontrol2_getsessionidentifier",
@@ -645,7 +683,7 @@
       "file_type": "code",
       "norm_label": ".getsessionidentifier()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L466"
+      "source_location": "L467"
     },
     {
       "id": "build_bridge_nowplayingbridge_iaudiosessioncontrol2_getsessioninstanceidentifier",
@@ -657,7 +695,7 @@
       "file_type": "code",
       "norm_label": ".getsessioninstanceidentifier()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L467"
+      "source_location": "L468"
     },
     {
       "id": "build_bridge_nowplayingbridge_iaudiosessioncontrol2_getstate",
@@ -669,7 +707,7 @@
       "file_type": "code",
       "norm_label": ".getstate()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L457"
+      "source_location": "L458"
     },
     {
       "id": "build_bridge_nowplayingbridge_iaudiosessioncontrol2_issystemsoundssession",
@@ -681,19 +719,7 @@
       "file_type": "code",
       "norm_label": ".issystemsoundssession()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L469"
-    },
-    {
-      "id": "build_bridge_nowplayingbridge_iaudiosessioncontrol2_registeraudiosessionnotification",
-      "label": ".RegisterAudioSessionNotification()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "IAudioSessionControl2",
-      "file_type": "code",
-      "norm_label": ".registeraudiosessionnotification()",
-      "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L464"
+      "source_location": "L470"
     },
     {
       "id": "build_bridge_nowplayingbridge_iaudiosessioncontrol2_setdisplayname",
@@ -705,7 +731,7 @@
       "file_type": "code",
       "norm_label": ".setdisplayname()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L459"
+      "source_location": "L460"
     },
     {
       "id": "build_bridge_nowplayingbridge_iaudiosessioncontrol2_setduckingpreference",
@@ -717,7 +743,7 @@
       "file_type": "code",
       "norm_label": ".setduckingpreference()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L470"
+      "source_location": "L471"
     },
     {
       "id": "build_bridge_nowplayingbridge_iaudiosessioncontrol2_setgroupingparam",
@@ -729,7 +755,7 @@
       "file_type": "code",
       "norm_label": ".setgroupingparam()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L463"
+      "source_location": "L464"
     },
     {
       "id": "build_bridge_nowplayingbridge_iaudiosessioncontrol2_seticonpath",
@@ -741,19 +767,7 @@
       "file_type": "code",
       "norm_label": ".seticonpath()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L461"
-    },
-    {
-      "id": "build_bridge_nowplayingbridge_iaudiosessioncontrol2_unregisteraudiosessionnotification",
-      "label": ".UnregisterAudioSessionNotification()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "IAudioSessionControl2",
-      "file_type": "code",
-      "norm_label": ".unregisteraudiosessionnotification()",
-      "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L465"
+      "source_location": "L462"
     },
     {
       "id": "build_bridge_nowplayingbridge_iaudiosessioncontrol_getdisplayname",
@@ -765,7 +779,7 @@
       "file_type": "code",
       "norm_label": ".getdisplayname()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L444"
+      "source_location": "L445"
     },
     {
       "id": "build_bridge_nowplayingbridge_iaudiosessioncontrol_getgroupingparam",
@@ -777,7 +791,7 @@
       "file_type": "code",
       "norm_label": ".getgroupingparam()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L448"
+      "source_location": "L449"
     },
     {
       "id": "build_bridge_nowplayingbridge_iaudiosessioncontrol_geticonpath",
@@ -789,7 +803,7 @@
       "file_type": "code",
       "norm_label": ".geticonpath()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L446"
+      "source_location": "L447"
     },
     {
       "id": "build_bridge_nowplayingbridge_iaudiosessioncontrol_getstate",
@@ -801,7 +815,7 @@
       "file_type": "code",
       "norm_label": ".getstate()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L443"
+      "source_location": "L444"
     },
     {
       "id": "build_bridge_nowplayingbridge_iaudiosessioncontrol_registeraudiosessionnotification",
@@ -813,7 +827,7 @@
       "file_type": "code",
       "norm_label": ".registeraudiosessionnotification()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L450"
+      "source_location": "L451"
     },
     {
       "id": "build_bridge_nowplayingbridge_iaudiosessioncontrol_setdisplayname",
@@ -825,7 +839,7 @@
       "file_type": "code",
       "norm_label": ".setdisplayname()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L445"
+      "source_location": "L446"
     },
     {
       "id": "build_bridge_nowplayingbridge_iaudiosessioncontrol_setgroupingparam",
@@ -837,7 +851,7 @@
       "file_type": "code",
       "norm_label": ".setgroupingparam()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L449"
+      "source_location": "L450"
     },
     {
       "id": "build_bridge_nowplayingbridge_iaudiosessioncontrol_seticonpath",
@@ -849,91 +863,7 @@
       "file_type": "code",
       "norm_label": ".seticonpath()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L447"
-    },
-    {
-      "id": "build_bridge_nowplayingbridge_iaudiosessioncontrol_unregisteraudiosessionnotification",
-      "label": ".UnregisterAudioSessionNotification()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "IAudioSessionControl2",
-      "file_type": "code",
-      "norm_label": ".unregisteraudiosessionnotification()",
-      "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L451"
-    },
-    {
-      "id": "build_bridge_nowplayingbridge_iaudiosessionmanager2_getaudiosessioncontrol",
-      "label": ".GetAudioSessionControl()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "IAudioSessionControl2",
-      "file_type": "code",
-      "norm_label": ".getaudiosessioncontrol()",
-      "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L424"
-    },
-    {
-      "id": "build_bridge_nowplayingbridge_iaudiosessionmanager2_getsimpleaudiovolume",
-      "label": ".GetSimpleAudioVolume()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "IAudioSessionControl2",
-      "file_type": "code",
-      "norm_label": ".getsimpleaudiovolume()",
-      "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L425"
-    },
-    {
-      "id": "build_bridge_nowplayingbridge_iaudiosessionmanager2_registerducknotification",
-      "label": ".RegisterDuckNotification()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "IAudioSessionControl2",
-      "file_type": "code",
-      "norm_label": ".registerducknotification()",
-      "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L429"
-    },
-    {
-      "id": "build_bridge_nowplayingbridge_iaudiosessionmanager2_registersessionnotification",
-      "label": ".RegisterSessionNotification()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "IAudioSessionControl2",
-      "file_type": "code",
-      "norm_label": ".registersessionnotification()",
-      "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L427"
-    },
-    {
-      "id": "build_bridge_nowplayingbridge_iaudiosessionmanager2_unregisterducknotification",
-      "label": ".UnregisterDuckNotification()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "IAudioSessionControl2",
-      "file_type": "code",
-      "norm_label": ".unregisterducknotification()",
-      "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L430"
-    },
-    {
-      "id": "build_bridge_nowplayingbridge_iaudiosessionmanager2_unregistersessionnotification",
-      "label": ".UnregisterSessionNotification()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "IAudioSessionControl2",
-      "file_type": "code",
-      "norm_label": ".unregistersessionnotification()",
-      "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L428"
+      "source_location": "L448"
     },
     {
       "id": "build_bridge_nowplayingbridge_isimpleaudiovolume_getmastervolume",
@@ -945,7 +875,7 @@
       "file_type": "code",
       "norm_label": ".getmastervolume()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L477"
+      "source_location": "L478"
     },
     {
       "id": "build_bridge_nowplayingbridge_isimpleaudiovolume_getmute",
@@ -957,7 +887,7 @@
       "file_type": "code",
       "norm_label": ".getmute()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L479"
+      "source_location": "L480"
     },
     {
       "id": "build_bridge_nowplayingbridge_isimpleaudiovolume_setmastervolume",
@@ -969,7 +899,7 @@
       "file_type": "code",
       "norm_label": ".setmastervolume()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L476"
+      "source_location": "L477"
     },
     {
       "id": "build_bridge_nowplayingbridge_isimpleaudiovolume_setmute",
@@ -981,7 +911,219 @@
       "file_type": "code",
       "norm_label": ".setmute()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L478"
+      "source_location": "L479"
+    },
+    {
+      "id": "build_bridge_nowplayingbridge_applemusicui_closemenu",
+      "label": ".CloseMenu()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "AppleMusicUi",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "SetFocus",
+            "receiver_type": "AutomationElement",
+            "lang": "csharp",
+            "line": "L533"
+          }
+        ]
+      },
+      "norm_label": ".closemenu()",
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L531"
+    },
+    {
+      "id": "build_bridge_nowplayingbridge_applemusicui_favoritetoggle",
+      "label": ".FavoriteToggle()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "AppleMusicUi",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "GetCurrentPattern",
+            "receiver_type": "AutomationElement",
+            "lang": "csharp",
+            "line": "L639"
+          }
+        ]
+      },
+      "norm_label": ".favoritetoggle()",
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L606"
+    },
+    {
+      "id": "build_bridge_nowplayingbridge_applemusicui_findbyid",
+      "label": ".FindById()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "AppleMusicUi",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "FindFirst",
+            "receiver_type": "AutomationElement",
+            "lang": "csharp",
+            "line": "L505"
+          }
+        ]
+      },
+      "norm_label": ".findbyid()",
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L503"
+    },
+    {
+      "id": "build_bridge_nowplayingbridge_applemusicui_findfavoritetoggle",
+      "label": ".FindFavoriteToggle()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "AppleMusicUi",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "FindAll",
+            "receiver_type": "AutomationElement",
+            "lang": "csharp",
+            "line": "L514"
+          }
+        ]
+      },
+      "norm_label": ".findfavoritetoggle()",
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L510"
+    },
+    {
+      "id": "build_bridge_nowplayingbridge_applemusicui_getwindow",
+      "label": ".GetWindow()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "AppleMusicUi",
+      "file_type": "code",
+      "norm_label": ".getwindow()",
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L494"
+    },
+    {
+      "id": "build_bridge_nowplayingbridge_applemusicui_keybd_event",
+      "label": ".keybd_event()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "AppleMusicUi",
+      "file_type": "code",
+      "norm_label": ".keybd_event()",
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L490"
+    },
+    {
+      "id": "build_bridge_nowplayingbridge_applemusicui_readnext",
+      "label": ".ReadNext()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "AppleMusicUi",
+      "file_type": "code",
+      "metadata": {
+        "unresolved_calls": [
+          {
+            "callee": "FindAll",
+            "receiver_type": "AutomationElement",
+            "lang": "csharp",
+            "line": "L572"
+          },
+          {
+            "callee": "Add",
+            "receiver_type": "List",
+            "lang": "csharp",
+            "line": "L577"
+          }
+        ]
+      },
+      "norm_label": ".readnext()",
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L540"
+    },
+    {
+      "id": "src_actions_favorite_favoriteaction_onkeydown",
+      "label": ".onKeyDown()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "FavoriteAction",
+      "file_type": "code",
+      "norm_label": ".onkeydown()",
+      "source_file": "src/actions/favorite.ts",
+      "source_location": "L30"
+    },
+    {
+      "id": "src_actions_favorite_favoriteaction_onupdate",
+      "label": ".onUpdate()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "FavoriteAction",
+      "file_type": "code",
+      "norm_label": ".onupdate()",
+      "source_file": "src/actions/favorite.ts",
+      "source_location": "L13"
+    },
+    {
+      "id": "src_actions_favorite_favoriteaction_onwillappear",
+      "label": ".onWillAppear()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "FavoriteAction",
+      "file_type": "code",
+      "norm_label": ".onwillappear()",
+      "source_file": "src/actions/favorite.ts",
+      "source_location": "L15"
+    },
+    {
+      "id": "src_actions_favorite_favoriteaction_onwilldisappear",
+      "label": ".onWillDisappear()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "FavoriteAction",
+      "file_type": "code",
+      "norm_label": ".onwilldisappear()",
+      "source_file": "src/actions/favorite.ts",
+      "source_location": "L23"
+    },
+    {
+      "id": "src_actions_favorite_favoriteaction_setall",
+      "label": ".setAll()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "FavoriteAction",
+      "file_type": "code",
+      "norm_label": ".setall()",
+      "source_file": "src/actions/favorite.ts",
+      "source_location": "L48"
+    },
+    {
+      "id": "src_actions_favorite_favoriteaction_synctrack",
+      "label": ".syncTrack()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "FavoriteAction",
+      "file_type": "code",
+      "norm_label": ".synctrack()",
+      "source_file": "src/actions/favorite.ts",
+      "source_location": "L39"
     },
     {
       "id": "build_bridge_nowplayingbridge_applemusicvolume_adjust",
@@ -997,19 +1139,19 @@
             "callee": "Max",
             "receiver_type": "Math",
             "lang": "csharp",
-            "line": "L358"
+            "line": "L359"
           },
           {
             "callee": "Min",
             "receiver_type": "Math",
             "lang": "csharp",
-            "line": "L358"
+            "line": "L359"
           }
         ]
       },
       "norm_label": ".adjust()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L349"
+      "source_location": "L350"
     },
     {
       "id": "build_bridge_nowplayingbridge_applemusicvolume_findsessionvolumes",
@@ -1025,31 +1167,31 @@
             "callee": "Add",
             "receiver_type": "HashSet",
             "lang": "csharp",
-            "line": "L252"
+            "line": "L253"
           },
           {
             "callee": "CreateInstance",
             "receiver_type": "Activator",
             "lang": "csharp",
-            "line": "L255"
+            "line": "L256"
           },
           {
             "callee": "Contains",
             "receiver_type": "HashSet",
             "lang": "csharp",
-            "line": "L286"
+            "line": "L287"
           },
           {
             "callee": "Add",
             "receiver_type": "List",
             "lang": "csharp",
-            "line": "L288"
+            "line": "L289"
           }
         ]
       },
       "norm_label": ".findsessionvolumes()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L241"
+      "source_location": "L242"
     },
     {
       "id": "build_bridge_nowplayingbridge_applemusicvolume_printallsessions",
@@ -1065,19 +1207,19 @@
             "callee": "CreateInstance",
             "receiver_type": "Activator",
             "lang": "csharp",
-            "line": "L298"
+            "line": "L299"
           },
           {
             "callee": "WriteLine",
             "receiver_type": "Console",
             "lang": "csharp",
-            "line": "L323"
+            "line": "L324"
           }
         ]
       },
       "norm_label": ".printallsessions()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L295"
+      "source_location": "L296"
     },
     {
       "id": "build_bridge_nowplayingbridge_applemusicvolume_togglemute",
@@ -1089,7 +1231,43 @@
       "file_type": "code",
       "norm_label": ".togglemute()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L367"
+      "source_location": "L368"
+    },
+    {
+      "id": "build_bridge_nowplayingbridge_iaudiosessioncontrol2_registeraudiosessionnotification",
+      "label": ".RegisterAudioSessionNotification()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "NowPlayingBridge.cs",
+      "file_type": "code",
+      "norm_label": ".registeraudiosessionnotification()",
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L465"
+    },
+    {
+      "id": "build_bridge_nowplayingbridge_iaudiosessioncontrol2_unregisteraudiosessionnotification",
+      "label": ".UnregisterAudioSessionNotification()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "NowPlayingBridge.cs",
+      "file_type": "code",
+      "norm_label": ".unregisteraudiosessionnotification()",
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L466"
+    },
+    {
+      "id": "build_bridge_nowplayingbridge_iaudiosessioncontrol_unregisteraudiosessionnotification",
+      "label": ".UnregisterAudioSessionNotification()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "NowPlayingBridge.cs",
+      "file_type": "code",
+      "norm_label": ".unregisteraudiosessionnotification()",
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L452"
     },
     {
       "id": "build_bridge_nowplayingbridge_iaudiosessionenumerator_getcount",
@@ -1101,7 +1279,7 @@
       "file_type": "code",
       "norm_label": ".getcount()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L436"
+      "source_location": "L437"
     },
     {
       "id": "build_bridge_nowplayingbridge_iaudiosessionenumerator_getsession",
@@ -1113,7 +1291,19 @@
       "file_type": "code",
       "norm_label": ".getsession()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L437"
+      "source_location": "L438"
+    },
+    {
+      "id": "build_bridge_nowplayingbridge_iaudiosessionmanager2_getaudiosessioncontrol",
+      "label": ".GetAudioSessionControl()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "NowPlayingBridge.cs",
+      "file_type": "code",
+      "norm_label": ".getaudiosessioncontrol()",
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L425"
     },
     {
       "id": "build_bridge_nowplayingbridge_iaudiosessionmanager2_getsessionenumerator",
@@ -1125,7 +1315,67 @@
       "file_type": "code",
       "norm_label": ".getsessionenumerator()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L427"
+    },
+    {
+      "id": "build_bridge_nowplayingbridge_iaudiosessionmanager2_getsimpleaudiovolume",
+      "label": ".GetSimpleAudioVolume()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "NowPlayingBridge.cs",
+      "file_type": "code",
+      "norm_label": ".getsimpleaudiovolume()",
+      "source_file": "build-bridge/NowPlayingBridge.cs",
       "source_location": "L426"
+    },
+    {
+      "id": "build_bridge_nowplayingbridge_iaudiosessionmanager2_registerducknotification",
+      "label": ".RegisterDuckNotification()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "NowPlayingBridge.cs",
+      "file_type": "code",
+      "norm_label": ".registerducknotification()",
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L430"
+    },
+    {
+      "id": "build_bridge_nowplayingbridge_iaudiosessionmanager2_registersessionnotification",
+      "label": ".RegisterSessionNotification()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "NowPlayingBridge.cs",
+      "file_type": "code",
+      "norm_label": ".registersessionnotification()",
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L428"
+    },
+    {
+      "id": "build_bridge_nowplayingbridge_iaudiosessionmanager2_unregisterducknotification",
+      "label": ".UnregisterDuckNotification()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "NowPlayingBridge.cs",
+      "file_type": "code",
+      "norm_label": ".unregisterducknotification()",
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L431"
+    },
+    {
+      "id": "build_bridge_nowplayingbridge_iaudiosessionmanager2_unregistersessionnotification",
+      "label": ".UnregisterSessionNotification()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "NowPlayingBridge.cs",
+      "file_type": "code",
+      "norm_label": ".unregistersessionnotification()",
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L429"
     },
     {
       "id": "build_bridge_nowplayingbridge_immdevice_activate",
@@ -1137,7 +1387,7 @@
       "file_type": "code",
       "norm_label": ".activate()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L415"
+      "source_location": "L416"
     },
     {
       "id": "build_bridge_nowplayingbridge_immdevice_getid",
@@ -1149,7 +1399,7 @@
       "file_type": "code",
       "norm_label": ".getid()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L417"
+      "source_location": "L418"
     },
     {
       "id": "build_bridge_nowplayingbridge_immdevice_getstate",
@@ -1161,7 +1411,7 @@
       "file_type": "code",
       "norm_label": ".getstate()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L418"
+      "source_location": "L419"
     },
     {
       "id": "build_bridge_nowplayingbridge_immdevice_openpropertystore",
@@ -1173,7 +1423,7 @@
       "file_type": "code",
       "norm_label": ".openpropertystore()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L416"
+      "source_location": "L417"
     },
     {
       "id": "build_bridge_nowplayingbridge_immdevicecollection_getcount",
@@ -1185,7 +1435,7 @@
       "file_type": "code",
       "norm_label": ".getcount()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L408"
+      "source_location": "L409"
     },
     {
       "id": "build_bridge_nowplayingbridge_immdevicecollection_item",
@@ -1197,7 +1447,7 @@
       "file_type": "code",
       "norm_label": ".item()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L409"
+      "source_location": "L410"
     },
     {
       "id": "build_bridge_nowplayingbridge_immdeviceenumerator_enumaudioendpoints",
@@ -1209,7 +1459,7 @@
       "file_type": "code",
       "norm_label": ".enumaudioendpoints()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L398"
+      "source_location": "L399"
     },
     {
       "id": "build_bridge_nowplayingbridge_immdeviceenumerator_getdefaultaudioendpoint",
@@ -1221,7 +1471,7 @@
       "file_type": "code",
       "norm_label": ".getdefaultaudioendpoint()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L399"
+      "source_location": "L400"
     },
     {
       "id": "build_bridge_nowplayingbridge_immdeviceenumerator_getdevice",
@@ -1233,7 +1483,7 @@
       "file_type": "code",
       "norm_label": ".getdevice()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L400"
+      "source_location": "L401"
     },
     {
       "id": "build_bridge_nowplayingbridge_immdeviceenumerator_registerendpointnotificationcallback",
@@ -1245,7 +1495,7 @@
       "file_type": "code",
       "norm_label": ".registerendpointnotificationcallback()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L401"
+      "source_location": "L402"
     },
     {
       "id": "build_bridge_nowplayingbridge_immdeviceenumerator_unregisterendpointnotificationcallback",
@@ -1257,7 +1507,7 @@
       "file_type": "code",
       "norm_label": ".unregisterendpointnotificationcallback()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L402"
+      "source_location": "L403"
     },
     {
       "id": "src_actions_now_playing_cleanartist",
@@ -1269,7 +1519,7 @@
       "file_type": "code",
       "norm_label": "cleanartist()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L56"
+      "source_location": "L62"
     },
     {
       "id": "src_actions_now_playing_fits",
@@ -1281,7 +1531,7 @@
       "file_type": "code",
       "norm_label": "fits()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L102"
+      "source_location": "L108"
     },
     {
       "id": "src_actions_now_playing_formatartists",
@@ -1293,7 +1543,7 @@
       "file_type": "code",
       "norm_label": "formatartists()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L62"
+      "source_location": "L68"
     },
     {
       "id": "src_actions_now_playing_formattime",
@@ -1305,7 +1555,7 @@
       "file_type": "code",
       "norm_label": "formattime()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L73"
+      "source_location": "L79"
     },
     {
       "id": "src_actions_now_playing_makefieldstate",
@@ -1317,7 +1567,7 @@
       "file_type": "code",
       "norm_label": "makefieldstate()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L98"
+      "source_location": "L104"
     },
     {
       "id": "src_actions_now_playing_nowplayingaction_ensurescrolltimer",
@@ -1329,7 +1579,19 @@
       "file_type": "code",
       "norm_label": ".ensurescrolltimer()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L271"
+      "source_location": "L320"
+    },
+    {
+      "id": "src_actions_now_playing_nowplayingaction_fetchnext",
+      "label": ".fetchNext()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "now-playing.ts",
+      "file_type": "code",
+      "norm_label": ".fetchnext()",
+      "source_file": "src/actions/now-playing.ts",
+      "source_location": "L303"
     },
     {
       "id": "src_actions_now_playing_nowplayingaction_ondialdown",
@@ -1341,7 +1603,7 @@
       "file_type": "code",
       "norm_label": ".ondialdown()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L186"
+      "source_location": "L212"
     },
     {
       "id": "src_actions_now_playing_nowplayingaction_ondialrotate",
@@ -1353,7 +1615,19 @@
       "file_type": "code",
       "norm_label": ".ondialrotate()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L211"
+      "source_location": "L237"
+    },
+    {
+      "id": "src_actions_now_playing_nowplayingaction_ondidreceivesettings",
+      "label": ".onDidReceiveSettings()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "now-playing.ts",
+      "file_type": "code",
+      "norm_label": ".ondidreceivesettings()",
+      "source_file": "src/actions/now-playing.ts",
+      "source_location": "L195"
     },
     {
       "id": "src_actions_now_playing_nowplayingaction_ontouchtap",
@@ -1365,7 +1639,7 @@
       "file_type": "code",
       "norm_label": ".ontouchtap()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L207"
+      "source_location": "L233"
     },
     {
       "id": "src_actions_now_playing_nowplayingaction_onupdate",
@@ -1377,7 +1651,7 @@
       "file_type": "code",
       "norm_label": ".onupdate()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L160"
+      "source_location": "L167"
     },
     {
       "id": "src_actions_now_playing_nowplayingaction_onwillappear",
@@ -1389,7 +1663,7 @@
       "file_type": "code",
       "norm_label": ".onwillappear()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L162"
+      "source_location": "L169"
     },
     {
       "id": "src_actions_now_playing_nowplayingaction_onwilldisappear",
@@ -1401,7 +1675,7 @@
       "file_type": "code",
       "norm_label": ".onwilldisappear()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L172"
+      "source_location": "L180"
     },
     {
       "id": "src_actions_now_playing_nowplayingaction_render",
@@ -1413,7 +1687,7 @@
       "file_type": "code",
       "norm_label": ".render()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L215"
+      "source_location": "L241"
     },
     {
       "id": "src_actions_now_playing_nowplayingaction_stopscrolltimer",
@@ -1425,7 +1699,7 @@
       "file_type": "code",
       "norm_label": ".stopscrolltimer()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L278"
+      "source_location": "L327"
     },
     {
       "id": "src_actions_now_playing_nowplayingaction_tickscroll",
@@ -1437,7 +1711,7 @@
       "file_type": "code",
       "norm_label": ".tickscroll()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L285"
+      "source_location": "L334"
     },
     {
       "id": "src_actions_now_playing_positionof",
@@ -1449,7 +1723,7 @@
       "file_type": "code",
       "norm_label": "positionof()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L81"
+      "source_location": "L87"
     },
     {
       "id": "src_actions_now_playing_scrolltext",
@@ -1461,7 +1735,7 @@
       "file_type": "code",
       "norm_label": "scrolltext()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L107"
+      "source_location": "L113"
     },
     {
       "id": "src_actions_now_playing_tickfield",
@@ -1473,7 +1747,7 @@
       "file_type": "code",
       "norm_label": "tickfield()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L127"
+      "source_location": "L133"
     },
     {
       "id": "src_actions_now_playing_timefeedback",
@@ -1485,7 +1759,7 @@
       "file_type": "code",
       "norm_label": "timefeedback()",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L86"
+      "source_location": "L92"
     },
     {
       "id": "src_text_metrics_textwidthpx",
@@ -1560,6 +1834,42 @@
       "source_location": "L38"
     },
     {
+      "id": "scripts_make_icons_heartfilledicon",
+      "label": "heartFilledIcon()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "make-icons.mjs",
+      "file_type": "code",
+      "norm_label": "heartfilledicon()",
+      "source_file": "scripts/make-icons.mjs",
+      "source_location": "L307"
+    },
+    {
+      "id": "scripts_make_icons_hearticon",
+      "label": "heartIcon()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "make-icons.mjs",
+      "file_type": "code",
+      "norm_label": "hearticon()",
+      "source_file": "scripts/make-icons.mjs",
+      "source_location": "L300"
+    },
+    {
+      "id": "scripts_make_icons_heartpoints",
+      "label": "heartPoints()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "make-icons.mjs",
+      "file_type": "code",
+      "norm_label": "heartpoints()",
+      "source_file": "scripts/make-icons.mjs",
+      "source_location": "L288"
+    },
+    {
       "id": "scripts_make_icons_makecanvas",
       "label": "makeCanvas()",
       "_callable": true,
@@ -1617,7 +1927,7 @@
       "file_type": "code",
       "norm_label": "pauseoverlay()",
       "source_file": "scripts/make-icons.mjs",
-      "source_location": "L287"
+      "source_location": "L313"
     },
     {
       "id": "scripts_make_icons_playicon",
@@ -1653,7 +1963,7 @@
       "file_type": "code",
       "norm_label": "save()",
       "source_file": "scripts/make-icons.mjs",
-      "source_location": "L298"
+      "source_location": "L324"
     },
     {
       "id": "scripts_make_icons_triangle",
@@ -1729,13 +2039,13 @@
             "callee": "WriteLine",
             "receiver_type": "Console",
             "lang": "csharp",
-            "line": "L510"
+            "line": "L684"
           }
         ]
       },
       "norm_label": ".main()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L484"
+      "source_location": "L658"
     },
     {
       "id": "build_bridge_nowplayingbridge_nowplayingbridge_appendjsonstring",
@@ -1751,13 +2061,13 @@
             "callee": "Append",
             "receiver_type": "StringBuilder",
             "lang": "csharp",
-            "line": "L207"
+            "line": "L208"
           }
         ]
       },
       "norm_label": ".appendjsonstring()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L205"
+      "source_location": "L206"
     },
     {
       "id": "build_bridge_nowplayingbridge_nowplayingbridge_await",
@@ -1773,13 +2083,13 @@
             "callee": "GetResults",
             "receiver_type": "IAsyncOperation",
             "lang": "csharp",
-            "line": "L38"
+            "line": "L39"
           }
         ]
       },
       "norm_label": ".await()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L34"
+      "source_location": "L35"
     },
     {
       "id": "build_bridge_nowplayingbridge_nowplayingbridge_awaitprogress",
@@ -1795,13 +2105,13 @@
             "callee": "GetResults",
             "receiver_type": "IAsyncOperationWithProgress",
             "lang": "csharp",
-            "line": "L45"
+            "line": "L46"
           }
         ]
       },
       "norm_label": ".awaitprogress()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L41"
+      "source_location": "L42"
     },
     {
       "id": "build_bridge_nowplayingbridge_nowplayingbridge_control",
@@ -1813,7 +2123,7 @@
       "file_type": "code",
       "norm_label": ".control()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L165"
+      "source_location": "L166"
     },
     {
       "id": "build_bridge_nowplayingbridge_nowplayingbridge_getmanager",
@@ -1829,13 +2139,13 @@
             "callee": "RequestAsync",
             "receiver_type": "GlobalSystemMediaTransportControlsSessionManager",
             "lang": "csharp",
-            "line": "L29"
+            "line": "L30"
           }
         ]
       },
       "norm_label": ".getmanager()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L25"
+      "source_location": "L26"
     },
     {
       "id": "build_bridge_nowplayingbridge_nowplayingbridge_getsnapshot",
@@ -1851,31 +2161,31 @@
             "callee": "FromBuffer",
             "receiver_type": "DataReader",
             "lang": "csharp",
-            "line": "L84"
+            "line": "L85"
           },
           {
             "callee": "ToBase64String",
             "receiver_type": "Convert",
             "lang": "csharp",
-            "line": "L87"
+            "line": "L88"
           },
           {
             "callee": "Append",
             "receiver_type": "StringBuilder",
             "lang": "csharp",
-            "line": "L102"
+            "line": "L103"
           },
           {
             "callee": "ToString",
             "receiver_type": "StringBuilder",
             "lang": "csharp",
-            "line": "L114"
+            "line": "L115"
           }
         ]
       },
       "norm_label": ".getsnapshot()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L48"
+      "source_location": "L49"
     },
     {
       "id": "build_bridge_nowplayingbridge_nowplayingbridge_picksession",
@@ -1891,19 +2201,19 @@
             "callee": "GetSessions",
             "receiver_type": "GlobalSystemMediaTransportControlsSessionManager",
             "lang": "csharp",
-            "line": "L188"
+            "line": "L189"
           },
           {
             "callee": "GetCurrentSession",
             "receiver_type": "GlobalSystemMediaTransportControlsSessionManager",
             "lang": "csharp",
-            "line": "L202"
+            "line": "L203"
           }
         ]
       },
       "norm_label": ".picksession()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L185"
+      "source_location": "L186"
     },
     {
       "id": "build_bridge_nowplayingbridge_nowplayingbridge_playurl",
@@ -1919,19 +2229,30 @@
             "callee": "FindFirst",
             "receiver_type": "AutomationElement",
             "lang": "csharp",
-            "line": "L145"
+            "line": "L146"
           },
           {
             "callee": "TryGetCurrentPattern",
             "receiver_type": "AutomationElement",
             "lang": "csharp",
-            "line": "L157"
+            "line": "L158"
           }
         ]
       },
       "norm_label": ".playurl()",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L129"
+      "source_location": "L130"
+    },
+    {
+      "id": "src_actions_favorite",
+      "label": "favorite.ts",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "plugin.ts",
+      "file_type": "code",
+      "norm_label": "favorite.ts",
+      "source_file": "src/actions/favorite.ts",
+      "source_location": "L1"
     },
     {
       "id": "src_actions_mute",
@@ -2085,7 +2406,7 @@
       "file_type": "code",
       "norm_label": "bridge_path",
       "source_file": "src/now-playing-service.ts",
-      "source_location": "L23"
+      "source_location": "L31"
     },
     {
       "id": "src_plugin",
@@ -2121,17 +2442,6 @@
       "source_location": ""
     },
     {
-      "id": "intptr",
-      "label": "IntPtr",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "IAudioSessionControl2",
-      "file_type": "code",
-      "norm_label": "intptr",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
       "id": "com_alexisvscsharp_nowplaying_sdplugin_package",
       "label": "com.alexisvscsharp.nowplaying.sdPlugin/package.json",
       "_origin": "ast",
@@ -2154,6 +2464,50 @@
       "source_location": "L2"
     },
     {
+      "id": "automationelement",
+      "label": "AutomationElement",
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "AppleMusicUi",
+      "file_type": "code",
+      "norm_label": "automationelement",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "dllimport",
+      "label": "DllImport",
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "AppleMusicUi",
+      "file_type": "code",
+      "norm_label": "dllimport",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "uintptr",
+      "label": "UIntPtr",
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "AppleMusicUi",
+      "file_type": "code",
+      "norm_label": "uintptr",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "src_actions_favorite_ts_action",
+      "label": "action",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "FavoriteAction",
+      "file_type": "code",
+      "norm_label": "action",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
       "id": "build_bridge_nowplayingbridge",
       "label": "NowPlayingBridge.cs",
       "_origin": "ast",
@@ -2163,6 +2517,17 @@
       "norm_label": "nowplayingbridge.cs",
       "source_file": "build-bridge/NowPlayingBridge.cs",
       "source_location": "L1"
+    },
+    {
+      "id": "intptr",
+      "label": "IntPtr",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "NowPlayingBridge.cs",
+      "file_type": "code",
+      "norm_label": "intptr",
+      "source_file": "",
+      "source_location": ""
     },
     {
       "id": "list",
@@ -2195,7 +2560,18 @@
       "file_type": "code",
       "norm_label": "artist_spec",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L49"
+      "source_location": "L53"
+    },
+    {
+      "id": "src_actions_now_playing_next_spec",
+      "label": "NEXT_SPEC",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "now-playing.ts",
+      "file_type": "code",
+      "norm_label": "next_spec",
+      "source_file": "src/actions/now-playing.ts",
+      "source_location": "L54"
     },
     {
       "id": "src_actions_now_playing_title_spec",
@@ -2206,7 +2582,7 @@
       "file_type": "code",
       "norm_label": "title_spec",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L48"
+      "source_location": "L52"
     },
     {
       "id": "src_actions_now_playing_ts_action",
@@ -3705,9 +4081,131 @@
       "norm_label": "ref_node_zlib",
       "source_file": "",
       "type": "external"
+    },
+    {
+      "id": "system_windows_automation",
+      "label": "system_windows_automation",
+      "community": 2,
+      "community_name": "NowPlayingBridge.cs",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "system_windows_automation",
+      "source_file": "",
+      "type": "external"
     }
   ],
   "links": [
+    {
+      "source": "build_bridge_nowplayingbridge_applemusicui_keybd_event",
+      "target": "dllimport",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "attribute",
+      "metadata": {
+        "ref_token": "DllImport"
+      },
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L490",
+      "weight": 1.0
+    },
+    {
+      "source": "build_bridge_nowplayingbridge_applemusicui_closemenu",
+      "target": "build_bridge_nowplayingbridge_applemusicui_keybd_event",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L535",
+      "weight": 1.0
+    },
+    {
+      "source": "build_bridge_nowplayingbridge_applemusicui_favoritetoggle",
+      "target": "build_bridge_nowplayingbridge_applemusicui_getwindow",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L611",
+      "weight": 1.0
+    },
+    {
+      "source": "build_bridge_nowplayingbridge_applemusicui_favoritetoggle",
+      "target": "build_bridge_nowplayingbridge_applemusicui_findbyid",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L613",
+      "weight": 1.0
+    },
+    {
+      "source": "build_bridge_nowplayingbridge_applemusicui_favoritetoggle",
+      "target": "build_bridge_nowplayingbridge_applemusicui_findfavoritetoggle",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L617",
+      "weight": 1.0
+    },
+    {
+      "source": "build_bridge_nowplayingbridge_applemusicui_favoritetoggle",
+      "target": "build_bridge_nowplayingbridge_applemusicui_closemenu",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L618",
+      "weight": 1.0
+    },
+    {
+      "source": "build_bridge_nowplayingbridge_applemusicui_favoritetoggle",
+      "target": "build_bridge_nowplayingbridge_applemusicui_keybd_event",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L632",
+      "weight": 1.0
+    },
+    {
+      "source": "build_bridge_nowplayingbridge_applemusicui_readnext",
+      "target": "build_bridge_nowplayingbridge_applemusicui_getwindow",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L545",
+      "weight": 1.0
+    },
+    {
+      "source": "build_bridge_nowplayingbridge_applemusicui_readnext",
+      "target": "build_bridge_nowplayingbridge_applemusicui_findbyid",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L547",
+      "weight": 1.0
+    },
     {
       "source": "build_bridge_nowplayingbridge_applemusicvolume_adjust",
       "target": "build_bridge_nowplayingbridge_applemusicvolume_findsessionvolumes",
@@ -3717,7 +4215,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L353",
+      "source_location": "L354",
       "weight": 1.0
     },
     {
@@ -3729,7 +4227,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L371",
+      "source_location": "L372",
       "weight": 1.0
     },
     {
@@ -3741,7 +4239,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L503",
+      "source_location": "L677",
       "weight": 1.0
     },
     {
@@ -3753,7 +4251,31 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L509",
+      "source_location": "L683",
+      "weight": 1.0
+    },
+    {
+      "source": "build_bridge_nowplayingbridge_entrypoint_main",
+      "target": "build_bridge_nowplayingbridge_applemusicui_readnext",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L690",
+      "weight": 1.0
+    },
+    {
+      "source": "build_bridge_nowplayingbridge_entrypoint_main",
+      "target": "build_bridge_nowplayingbridge_applemusicui_favoritetoggle",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L696",
       "weight": 1.0
     },
     {
@@ -3765,7 +4287,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L516",
+      "source_location": "L702",
       "weight": 1.0
     },
     {
@@ -3777,7 +4299,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L522",
+      "source_location": "L708",
       "weight": 1.0
     },
     {
@@ -3789,7 +4311,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L528",
+      "source_location": "L714",
       "weight": 1.0
     },
     {
@@ -3801,24 +4323,12 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L169",
+      "source_location": "L170",
       "weight": 1.0
     },
     {
       "source": "build_bridge_nowplayingbridge_nowplayingbridge_control",
       "target": "build_bridge_nowplayingbridge_nowplayingbridge_getmanager",
-      "relation": "calls",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "call",
-      "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L172",
-      "weight": 1.0
-    },
-    {
-      "source": "build_bridge_nowplayingbridge_nowplayingbridge_control",
-      "target": "build_bridge_nowplayingbridge_nowplayingbridge_picksession",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3830,6 +4340,18 @@
     },
     {
       "source": "build_bridge_nowplayingbridge_nowplayingbridge_control",
+      "target": "build_bridge_nowplayingbridge_nowplayingbridge_picksession",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L174",
+      "weight": 1.0
+    },
+    {
+      "source": "build_bridge_nowplayingbridge_nowplayingbridge_control",
       "target": "build_bridge_nowplayingbridge_nowplayingbridge_await",
       "relation": "calls",
       "_origin": "ast",
@@ -3837,7 +4359,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L177",
+      "source_location": "L178",
       "weight": 1.0
     },
     {
@@ -3849,7 +4371,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L29",
+      "source_location": "L30",
       "weight": 1.0
     },
     {
@@ -3861,7 +4383,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L104",
+      "source_location": "L105",
       "weight": 1.0
     },
     {
@@ -3873,7 +4395,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L52",
+      "source_location": "L53",
       "weight": 1.0
     },
     {
@@ -3885,7 +4407,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L53",
+      "source_location": "L54",
       "weight": 1.0
     },
     {
@@ -3897,7 +4419,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L56",
+      "source_location": "L57",
       "weight": 1.0
     },
     {
@@ -3909,7 +4431,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L83",
+      "source_location": "L84",
       "weight": 1.0
     },
     {
@@ -3958,6 +4480,54 @@
       "context": "call",
       "source_file": "scripts/make-icons.mjs",
       "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_make_icons_heartfilledicon",
+      "target": "scripts_make_icons_withbrandbackground",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "scripts/make-icons.mjs",
+      "source_location": "L308",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_make_icons_heartfilledicon",
+      "target": "scripts_make_icons_heartpoints",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "scripts/make-icons.mjs",
+      "source_location": "L309",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_make_icons_hearticon",
+      "target": "scripts_make_icons_withbrandbackground",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "scripts/make-icons.mjs",
+      "source_location": "L301",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_make_icons_hearticon",
+      "target": "scripts_make_icons_heartpoints",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "scripts/make-icons.mjs",
+      "source_location": "L302",
       "weight": 1.0
     },
     {
@@ -4041,7 +4611,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "scripts/make-icons.mjs",
-      "source_location": "L288",
+      "source_location": "L314",
       "weight": 1.0
     },
     {
@@ -4101,7 +4671,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "scripts/make-icons.mjs",
-      "source_location": "L300",
+      "source_location": "L326",
       "weight": 1.0
     },
     {
@@ -4177,6 +4747,54 @@
       "weight": 1.0
     },
     {
+      "source": "src_actions_favorite_favoriteaction_onkeydown",
+      "target": "src_actions_favorite_favoriteaction_setall",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/actions/favorite.ts",
+      "source_location": "L36",
+      "weight": 1.0
+    },
+    {
+      "source": "src_actions_favorite_favoriteaction_onupdate",
+      "target": "src_actions_favorite_favoriteaction_synctrack",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/actions/favorite.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "src_actions_favorite_favoriteaction_onwillappear",
+      "target": "src_actions_favorite_favoriteaction_synctrack",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/actions/favorite.ts",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "src_actions_favorite_favoriteaction_synctrack",
+      "target": "src_actions_favorite_favoriteaction_setall",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/actions/favorite.ts",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
       "source": "src_actions_now_playing_fits",
       "target": "src_text_metrics_textwidthpx",
       "relation": "calls",
@@ -4185,7 +4803,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L103",
+      "source_location": "L109",
       "weight": 1.0
     },
     {
@@ -4197,7 +4815,55 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L275",
+      "source_location": "L324",
+      "weight": 1.0
+    },
+    {
+      "source": "src_actions_now_playing_nowplayingaction_fetchnext",
+      "target": "src_actions_now_playing_makefieldstate",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/actions/now-playing.ts",
+      "source_location": "L315",
+      "weight": 1.0
+    },
+    {
+      "source": "src_actions_now_playing_nowplayingaction_fetchnext",
+      "target": "src_actions_now_playing_scrolltext",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/actions/now-playing.ts",
+      "source_location": "L316",
+      "weight": 1.0
+    },
+    {
+      "source": "src_actions_now_playing_nowplayingaction_ondidreceivesettings",
+      "target": "src_actions_now_playing_nowplayingaction_fetchnext",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/actions/now-playing.ts",
+      "source_location": "L203",
+      "weight": 1.0
+    },
+    {
+      "source": "src_actions_now_playing_nowplayingaction_ondidreceivesettings",
+      "target": "src_actions_now_playing_makefieldstate",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/actions/now-playing.ts",
+      "source_location": "L205",
       "weight": 1.0
     },
     {
@@ -4209,7 +4875,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L160",
+      "source_location": "L167",
       "weight": 1.0
     },
     {
@@ -4221,7 +4887,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L168",
+      "source_location": "L176",
       "weight": 1.0
     },
     {
@@ -4233,7 +4899,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L169",
+      "source_location": "L177",
       "weight": 1.0
     },
     {
@@ -4245,7 +4911,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L182",
+      "source_location": "L191",
       "weight": 1.0
     },
     {
@@ -4257,7 +4923,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L228",
+      "source_location": "L254",
       "weight": 1.0
     },
     {
@@ -4269,7 +4935,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L228",
+      "source_location": "L254",
       "weight": 1.0
     },
     {
@@ -4281,7 +4947,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L243",
+      "source_location": "L270",
       "weight": 1.0
     },
     {
@@ -4293,7 +4959,19 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L252",
+      "source_location": "L279",
+      "weight": 1.0
+    },
+    {
+      "source": "src_actions_now_playing_nowplayingaction_render",
+      "target": "src_actions_now_playing_nowplayingaction_fetchnext",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/actions/now-playing.ts",
+      "source_location": "L285",
       "weight": 1.0
     },
     {
@@ -4305,7 +4983,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L258",
+      "source_location": "L288",
       "weight": 1.0
     },
     {
@@ -4317,7 +4995,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L262",
+      "source_location": "L292",
       "weight": 1.0
     },
     {
@@ -4329,7 +5007,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L295",
+      "source_location": "L349",
       "weight": 1.0
     },
     {
@@ -4341,7 +5019,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L297",
+      "source_location": "L350",
       "weight": 1.0
     },
     {
@@ -4353,7 +5031,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L306",
+      "source_location": "L359",
       "weight": 1.0
     },
     {
@@ -4365,7 +5043,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L108",
+      "source_location": "L114",
       "weight": 1.0
     },
     {
@@ -4377,7 +5055,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L116",
+      "source_location": "L122",
       "weight": 1.0
     },
     {
@@ -4389,7 +5067,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L128",
+      "source_location": "L134",
       "weight": 1.0
     },
     {
@@ -4401,7 +5079,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L90",
+      "source_location": "L96",
       "weight": 1.0
     },
     {
@@ -4413,7 +5091,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L93",
+      "source_location": "L99",
       "weight": 1.0
     },
     {
@@ -4485,7 +5163,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/now-playing-service.ts",
-      "source_location": "L48",
+      "source_location": "L56",
       "weight": 1.0
     },
     {
@@ -4497,7 +5175,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/now-playing-service.ts",
-      "source_location": "L49",
+      "source_location": "L57",
       "weight": 1.0
     },
     {
@@ -4509,7 +5187,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/now-playing-service.ts",
-      "source_location": "L92",
+      "source_location": "L100",
       "weight": 1.0
     },
     {
@@ -4521,7 +5199,31 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "src/now-playing-service.ts",
-      "source_location": "L83",
+      "source_location": "L91",
+      "weight": 1.0
+    },
+    {
+      "source": "src_now_playing_service_nowplayingservice_uicontrol",
+      "target": "src_now_playing_service_nowplayingservice_controlwithoutput",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "src/now-playing-service.ts",
+      "source_location": "L130",
+      "weight": 1.0
+    },
+    {
+      "source": "src_actions_favorite_favoriteaction",
+      "target": "src_actions_favorite_ts_action",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "decorator",
+      "source_file": "src/actions/favorite.ts",
+      "source_location": "L10",
       "weight": 1.0
     },
     {
@@ -4545,7 +5247,7 @@
       "confidence_score": 1.0,
       "context": "decorator",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L155",
+      "source_location": "L161",
       "weight": 1.0
     },
     {
@@ -4584,7 +5286,7 @@
         "ref_token": "GlobalSystemMediaTransportControlsSessionManager"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L23",
+      "source_location": "L24",
       "weight": 1.0
     },
     {
@@ -4599,7 +5301,25 @@
         "ref_token": "ISimpleAudioVolume"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L241",
+      "source_location": "L242",
+      "weight": 1.0
+    },
+    {
+      "source": "build_bridge_nowplayingbridge",
+      "target": "system_windows_automation",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "metadata": {
+        "using_kind": "alias",
+        "alias": "UIA",
+        "target_fqn": "System.Windows.Automation",
+        "scope_kind": "file"
+      },
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L9",
       "weight": 1.0
     },
     {
@@ -4859,6 +5579,30 @@
       "weight": 1.0
     },
     {
+      "source": "src_actions_favorite",
+      "target": "src_now_playing_service_nowplayingpayload",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/actions/favorite.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "src_actions_favorite",
+      "target": "src_now_playing_service_nowplayingservice",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/actions/favorite.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
       "source": "src_actions_mute",
       "target": "src_now_playing_service_nowplayingservice",
       "relation": "imports",
@@ -4879,7 +5623,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L10",
+      "source_location": "L11",
       "weight": 1.0
     },
     {
@@ -4891,7 +5635,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L10",
+      "source_location": "L11",
       "weight": 1.0
     },
     {
@@ -4903,7 +5647,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L11",
+      "source_location": "L12",
       "weight": 1.0
     },
     {
@@ -5004,7 +5748,7 @@
     },
     {
       "source": "src_plugin",
-      "target": "src_actions_simple_controls_nextaction",
+      "target": "src_actions_favorite_favoriteaction",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5012,6 +5756,18 @@
       "context": "import",
       "source_file": "src/plugin.ts",
       "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_plugin",
+      "target": "src_actions_simple_controls_nextaction",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/plugin.ts",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
@@ -5023,7 +5779,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/plugin.ts",
-      "source_location": "L6",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
@@ -5035,7 +5791,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/plugin.ts",
-      "source_location": "L6",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
@@ -5047,7 +5803,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/plugin.ts",
-      "source_location": "L6",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
@@ -5159,6 +5915,30 @@
       "weight": 1.0
     },
     {
+      "source": "src_actions_favorite",
+      "target": "ref_elgato_streamdeck",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/actions/favorite.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_actions_favorite",
+      "target": "src_now_playing_service",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/actions/favorite.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
       "source": "src_actions_mute",
       "target": "ref_elgato_streamdeck",
       "relation": "imports_from",
@@ -5203,7 +5983,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L10",
+      "source_location": "L11",
       "weight": 1.0
     },
     {
@@ -5215,7 +5995,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L11",
+      "source_location": "L12",
       "weight": 1.0
     },
     {
@@ -5424,7 +6204,7 @@
     },
     {
       "source": "src_plugin",
-      "target": "src_actions_simple_controls",
+      "target": "src_actions_favorite",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -5432,6 +6212,35 @@
       "context": "import",
       "source_file": "src/plugin.ts",
       "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "src_plugin",
+      "target": "src_actions_simple_controls",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "src/plugin.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "build_bridge_nowplayingbridge_applemusicui_closemenu",
+      "target": "automationelement",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "AutomationElement",
+        "qualified": true,
+        "ref_qualifier": "UIA"
+      },
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L531",
       "weight": 1.0
     },
     {
@@ -5446,7 +6255,7 @@
         "ref_token": "GlobalSystemMediaTransportControlsSessionManager"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L185",
+      "source_location": "L186",
       "weight": 1.0
     },
     {
@@ -5461,7 +6270,7 @@
         "ref_token": "Guid"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L462",
+      "source_location": "L463",
       "weight": 1.0
     },
     {
@@ -5476,7 +6285,7 @@
         "ref_token": "Guid"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L459",
+      "source_location": "L460",
       "weight": 1.0
     },
     {
@@ -5491,7 +6300,7 @@
         "ref_token": "Guid"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L463",
+      "source_location": "L464",
       "weight": 1.0
     },
     {
@@ -5506,7 +6315,7 @@
         "ref_token": "Guid"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L461",
+      "source_location": "L462",
       "weight": 1.0
     },
     {
@@ -5521,7 +6330,7 @@
         "ref_token": "Guid"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L448",
+      "source_location": "L449",
       "weight": 1.0
     },
     {
@@ -5536,7 +6345,7 @@
         "ref_token": "Guid"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L445",
+      "source_location": "L446",
       "weight": 1.0
     },
     {
@@ -5551,7 +6360,7 @@
         "ref_token": "Guid"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L449",
+      "source_location": "L450",
       "weight": 1.0
     },
     {
@@ -5566,7 +6375,7 @@
         "ref_token": "Guid"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L447",
+      "source_location": "L448",
       "weight": 1.0
     },
     {
@@ -5581,7 +6390,7 @@
         "ref_token": "Guid"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L424",
+      "source_location": "L425",
       "weight": 1.0
     },
     {
@@ -5596,7 +6405,7 @@
         "ref_token": "Guid"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L425",
+      "source_location": "L426",
       "weight": 1.0
     },
     {
@@ -5611,7 +6420,7 @@
         "ref_token": "Guid"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L415",
+      "source_location": "L416",
       "weight": 1.0
     },
     {
@@ -5626,7 +6435,7 @@
         "ref_token": "Guid"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L476",
+      "source_location": "L477",
       "weight": 1.0
     },
     {
@@ -5641,7 +6450,7 @@
         "ref_token": "Guid"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L478",
+      "source_location": "L479",
       "weight": 1.0
     },
     {
@@ -5656,7 +6465,7 @@
         "ref_token": "IAsyncOperation"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L34",
+      "source_location": "L35",
       "weight": 1.0
     },
     {
@@ -5671,7 +6480,7 @@
         "ref_token": "IAsyncOperationWithProgress"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L41",
+      "source_location": "L42",
       "weight": 1.0
     },
     {
@@ -5686,7 +6495,7 @@
         "ref_token": "IAudioSessionControl"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L437",
+      "source_location": "L438",
       "weight": 1.0
     },
     {
@@ -5701,7 +6510,7 @@
         "ref_token": "IAudioSessionEnumerator"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L426",
+      "source_location": "L427",
       "weight": 1.0
     },
     {
@@ -5716,7 +6525,7 @@
         "ref_token": "IMMDevice"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L409",
+      "source_location": "L410",
       "weight": 1.0
     },
     {
@@ -5731,7 +6540,7 @@
         "ref_token": "IMMDevice"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L399",
+      "source_location": "L400",
       "weight": 1.0
     },
     {
@@ -5746,7 +6555,7 @@
         "ref_token": "IMMDevice"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L400",
+      "source_location": "L401",
       "weight": 1.0
     },
     {
@@ -5761,7 +6570,7 @@
         "ref_token": "IMMDeviceCollection"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L398",
+      "source_location": "L399",
       "weight": 1.0
     },
     {
@@ -5776,7 +6585,7 @@
         "ref_token": "IntPtr"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L464",
+      "source_location": "L465",
       "weight": 1.0
     },
     {
@@ -5791,7 +6600,7 @@
         "ref_token": "IntPtr"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L465",
+      "source_location": "L466",
       "weight": 1.0
     },
     {
@@ -5806,7 +6615,7 @@
         "ref_token": "IntPtr"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L450",
+      "source_location": "L451",
       "weight": 1.0
     },
     {
@@ -5821,7 +6630,7 @@
         "ref_token": "IntPtr"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L451",
+      "source_location": "L452",
       "weight": 1.0
     },
     {
@@ -5836,7 +6645,7 @@
         "ref_token": "IntPtr"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L429",
+      "source_location": "L430",
       "weight": 1.0
     },
     {
@@ -5851,7 +6660,7 @@
         "ref_token": "IntPtr"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L427",
+      "source_location": "L428",
       "weight": 1.0
     },
     {
@@ -5866,7 +6675,7 @@
         "ref_token": "IntPtr"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L430",
+      "source_location": "L431",
       "weight": 1.0
     },
     {
@@ -5881,7 +6690,7 @@
         "ref_token": "IntPtr"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L428",
+      "source_location": "L429",
       "weight": 1.0
     },
     {
@@ -5896,7 +6705,7 @@
         "ref_token": "IntPtr"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L415",
+      "source_location": "L416",
       "weight": 1.0
     },
     {
@@ -5911,7 +6720,7 @@
         "ref_token": "IntPtr"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L416",
+      "source_location": "L417",
       "weight": 1.0
     },
     {
@@ -5926,7 +6735,7 @@
         "ref_token": "IntPtr"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L401",
+      "source_location": "L402",
       "weight": 1.0
     },
     {
@@ -5941,7 +6750,7 @@
         "ref_token": "IntPtr"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L402",
+      "source_location": "L403",
       "weight": 1.0
     },
     {
@@ -5956,7 +6765,34 @@
         "ref_token": "StringBuilder"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L205",
+      "source_location": "L206",
+      "weight": 1.0
+    },
+    {
+      "source": "build_bridge_nowplayingbridge_applemusicui_keybd_event",
+      "target": "uintptr",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "metadata": {
+        "ref_token": "UIntPtr"
+      },
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L490",
+      "weight": 1.0
+    },
+    {
+      "source": "src_actions_favorite_favoriteaction_synctrack",
+      "target": "src_now_playing_service_nowplayingpayload",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "src/actions/favorite.ts",
+      "source_location": "L39",
       "weight": 1.0
     },
     {
@@ -5968,7 +6804,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L215",
+      "source_location": "L241",
       "weight": 1.0
     },
     {
@@ -5984,6 +6820,57 @@
       "weight": 1.0
     },
     {
+      "source": "build_bridge_nowplayingbridge_applemusicui_findbyid",
+      "target": "automationelement",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "AutomationElement",
+        "qualified": true,
+        "ref_qualifier": "UIA"
+      },
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L503",
+      "weight": 1.0
+    },
+    {
+      "source": "build_bridge_nowplayingbridge_applemusicui_findfavoritetoggle",
+      "target": "automationelement",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "AutomationElement",
+        "qualified": true,
+        "ref_qualifier": "UIA"
+      },
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L510",
+      "weight": 1.0
+    },
+    {
+      "source": "build_bridge_nowplayingbridge_applemusicui_getwindow",
+      "target": "automationelement",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "return_type",
+      "metadata": {
+        "ref_token": "AutomationElement",
+        "qualified": true,
+        "ref_qualifier": "UIA"
+      },
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L494",
+      "weight": 1.0
+    },
+    {
       "source": "build_bridge_nowplayingbridge_nowplayingbridge_picksession",
       "target": "globalsystemmediatransportcontrolssession",
       "relation": "references",
@@ -5995,7 +6882,7 @@
         "ref_token": "GlobalSystemMediaTransportControlsSession"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L185",
+      "source_location": "L186",
       "weight": 1.0
     },
     {
@@ -6010,7 +6897,7 @@
         "ref_token": "GlobalSystemMediaTransportControlsSessionManager"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L25",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -6025,7 +6912,7 @@
         "ref_token": "List"
       },
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L241",
+      "source_location": "L242",
       "weight": 1.0
     },
     {
@@ -6036,7 +6923,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L10",
+      "source_location": "L11",
       "weight": 1.0
     },
     {
@@ -6047,7 +6934,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L234",
+      "source_location": "L235",
       "weight": 1.0
     },
     {
@@ -6058,7 +6945,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L395",
+      "source_location": "L396",
       "weight": 1.0
     },
     {
@@ -6069,7 +6956,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L405",
+      "source_location": "L406",
       "weight": 1.0
     },
     {
@@ -6080,7 +6967,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L412",
+      "source_location": "L413",
       "weight": 1.0
     },
     {
@@ -6091,7 +6978,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L421",
+      "source_location": "L422",
       "weight": 1.0
     },
     {
@@ -6102,7 +6989,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L433",
+      "source_location": "L434",
       "weight": 1.0
     },
     {
@@ -6113,7 +7000,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L440",
+      "source_location": "L441",
       "weight": 1.0
     },
     {
@@ -6124,7 +7011,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L454",
+      "source_location": "L455",
       "weight": 1.0
     },
     {
@@ -6135,7 +7022,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L473",
+      "source_location": "L474",
+      "weight": 1.0
+    },
+    {
+      "source": "build_bridge_nowplayingbridge",
+      "target": "build_bridge_nowplayingbridge_applemusicui",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L488",
       "weight": 1.0
     },
     {
@@ -6146,7 +7044,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L482",
+      "source_location": "L656",
       "weight": 1.0
     },
     {
@@ -6668,13 +7566,13 @@
     },
     {
       "source": "scripts_make_icons",
-      "target": "scripts_make_icons_pauseoverlay",
+      "target": "scripts_make_icons_heartpoints",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/make-icons.mjs",
-      "source_location": "L287",
+      "source_location": "L288",
       "weight": 1.0
     },
     {
@@ -6690,13 +7588,24 @@
     },
     {
       "source": "scripts_make_icons",
+      "target": "scripts_make_icons_pauseoverlay",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/make-icons.mjs",
+      "source_location": "L313",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_make_icons",
       "target": "scripts_make_icons_save",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/make-icons.mjs",
-      "source_location": "L298",
+      "source_location": "L324",
       "weight": 1.0
     },
     {
@@ -6733,6 +7642,17 @@
       "weight": 1.0
     },
     {
+      "source": "src_actions_favorite",
+      "target": "src_actions_favorite_favoriteaction",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/actions/favorite.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
       "source": "src_actions_mute",
       "target": "src_actions_mute_muteaction",
       "relation": "contains",
@@ -6745,13 +7665,24 @@
     },
     {
       "source": "src_actions_now_playing",
+      "target": "src_actions_now_playing_makefieldstate",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/actions/now-playing.ts",
+      "source_location": "L104",
+      "weight": 1.0
+    },
+    {
+      "source": "src_actions_now_playing",
       "target": "src_actions_now_playing_fits",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L102",
+      "source_location": "L108",
       "weight": 1.0
     },
     {
@@ -6762,7 +7693,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L107",
+      "source_location": "L113",
       "weight": 1.0
     },
     {
@@ -6773,7 +7704,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L127",
+      "source_location": "L133",
       "weight": 1.0
     },
     {
@@ -6784,7 +7715,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L13",
+      "source_location": "L14",
       "weight": 1.0
     },
     {
@@ -6795,7 +7726,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L156",
+      "source_location": "L162",
       "weight": 1.0
     },
     {
@@ -6806,7 +7737,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L17",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
@@ -6817,7 +7748,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L24",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -6828,7 +7759,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L31",
+      "source_location": "L33",
       "weight": 1.0
     },
     {
@@ -6839,7 +7770,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L47",
+      "source_location": "L51",
       "weight": 1.0
     },
     {
@@ -6850,7 +7781,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L48",
+      "source_location": "L52",
       "weight": 1.0
     },
     {
@@ -6861,7 +7792,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L49",
+      "source_location": "L53",
+      "weight": 1.0
+    },
+    {
+      "source": "src_actions_now_playing",
+      "target": "src_actions_now_playing_next_spec",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/actions/now-playing.ts",
+      "source_location": "L54",
       "weight": 1.0
     },
     {
@@ -6872,7 +7814,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L56",
+      "source_location": "L62",
       "weight": 1.0
     },
     {
@@ -6883,7 +7825,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L62",
+      "source_location": "L68",
       "weight": 1.0
     },
     {
@@ -6894,7 +7836,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L73",
+      "source_location": "L79",
       "weight": 1.0
     },
     {
@@ -6905,7 +7847,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L81",
+      "source_location": "L87",
       "weight": 1.0
     },
     {
@@ -6916,18 +7858,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L86",
-      "weight": 1.0
-    },
-    {
-      "source": "src_actions_now_playing",
-      "target": "src_actions_now_playing_makefieldstate",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/actions/now-playing.ts",
-      "source_location": "L98",
+      "source_location": "L92",
       "weight": 1.0
     },
     {
@@ -7048,7 +7979,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/now-playing-service.ts",
-      "source_location": "L123",
+      "source_location": "L144",
       "weight": 1.0
     },
     {
@@ -7070,7 +8001,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/now-playing-service.ts",
-      "source_location": "L23",
+      "source_location": "L31",
       "weight": 1.0
     },
     {
@@ -7261,6 +8192,83 @@
       "weight": 1.0
     },
     {
+      "source": "build_bridge_nowplayingbridge_applemusicui",
+      "target": "build_bridge_nowplayingbridge_applemusicui_keybd_event",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L490",
+      "weight": 1.0
+    },
+    {
+      "source": "build_bridge_nowplayingbridge_applemusicui",
+      "target": "build_bridge_nowplayingbridge_applemusicui_getwindow",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L494",
+      "weight": 1.0
+    },
+    {
+      "source": "build_bridge_nowplayingbridge_applemusicui",
+      "target": "build_bridge_nowplayingbridge_applemusicui_findbyid",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L503",
+      "weight": 1.0
+    },
+    {
+      "source": "build_bridge_nowplayingbridge_applemusicui",
+      "target": "build_bridge_nowplayingbridge_applemusicui_findfavoritetoggle",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L510",
+      "weight": 1.0
+    },
+    {
+      "source": "build_bridge_nowplayingbridge_applemusicui",
+      "target": "build_bridge_nowplayingbridge_applemusicui_closemenu",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L531",
+      "weight": 1.0
+    },
+    {
+      "source": "build_bridge_nowplayingbridge_applemusicui",
+      "target": "build_bridge_nowplayingbridge_applemusicui_readnext",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L540",
+      "weight": 1.0
+    },
+    {
+      "source": "build_bridge_nowplayingbridge_applemusicui",
+      "target": "build_bridge_nowplayingbridge_applemusicui_favoritetoggle",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L606",
+      "weight": 1.0
+    },
+    {
       "source": "build_bridge_nowplayingbridge_applemusicvolume",
       "target": "build_bridge_nowplayingbridge_applemusicvolume_findsessionvolumes",
       "relation": "method",
@@ -7268,7 +8276,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L241",
+      "source_location": "L242",
       "weight": 1.0
     },
     {
@@ -7279,7 +8287,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L295",
+      "source_location": "L296",
       "weight": 1.0
     },
     {
@@ -7290,7 +8298,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L349",
+      "source_location": "L350",
       "weight": 1.0
     },
     {
@@ -7301,7 +8309,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L367",
+      "source_location": "L368",
       "weight": 1.0
     },
     {
@@ -7312,7 +8320,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L484",
+      "source_location": "L658",
       "weight": 1.0
     },
     {
@@ -7323,7 +8331,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L443",
+      "source_location": "L444",
       "weight": 1.0
     },
     {
@@ -7334,7 +8342,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L444",
+      "source_location": "L445",
       "weight": 1.0
     },
     {
@@ -7345,7 +8353,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L445",
+      "source_location": "L446",
       "weight": 1.0
     },
     {
@@ -7356,7 +8364,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L446",
+      "source_location": "L447",
       "weight": 1.0
     },
     {
@@ -7367,7 +8375,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L447",
+      "source_location": "L448",
       "weight": 1.0
     },
     {
@@ -7378,7 +8386,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L448",
+      "source_location": "L449",
       "weight": 1.0
     },
     {
@@ -7389,7 +8397,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L449",
+      "source_location": "L450",
       "weight": 1.0
     },
     {
@@ -7400,7 +8408,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L450",
+      "source_location": "L451",
       "weight": 1.0
     },
     {
@@ -7411,7 +8419,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L451",
+      "source_location": "L452",
       "weight": 1.0
     },
     {
@@ -7422,7 +8430,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L457",
+      "source_location": "L458",
       "weight": 1.0
     },
     {
@@ -7433,7 +8441,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L458",
+      "source_location": "L459",
       "weight": 1.0
     },
     {
@@ -7444,7 +8452,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L459",
+      "source_location": "L460",
       "weight": 1.0
     },
     {
@@ -7455,7 +8463,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L460",
+      "source_location": "L461",
       "weight": 1.0
     },
     {
@@ -7466,7 +8474,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L461",
+      "source_location": "L462",
       "weight": 1.0
     },
     {
@@ -7477,7 +8485,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L462",
+      "source_location": "L463",
       "weight": 1.0
     },
     {
@@ -7488,7 +8496,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L463",
+      "source_location": "L464",
       "weight": 1.0
     },
     {
@@ -7499,7 +8507,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L464",
+      "source_location": "L465",
       "weight": 1.0
     },
     {
@@ -7510,7 +8518,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L465",
+      "source_location": "L466",
       "weight": 1.0
     },
     {
@@ -7521,7 +8529,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L466",
+      "source_location": "L467",
       "weight": 1.0
     },
     {
@@ -7532,7 +8540,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L467",
+      "source_location": "L468",
       "weight": 1.0
     },
     {
@@ -7543,7 +8551,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L468",
+      "source_location": "L469",
       "weight": 1.0
     },
     {
@@ -7554,7 +8562,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L469",
+      "source_location": "L470",
       "weight": 1.0
     },
     {
@@ -7565,7 +8573,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L470",
+      "source_location": "L471",
       "weight": 1.0
     },
     {
@@ -7576,7 +8584,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L436",
+      "source_location": "L437",
       "weight": 1.0
     },
     {
@@ -7587,7 +8595,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L437",
+      "source_location": "L438",
       "weight": 1.0
     },
     {
@@ -7598,7 +8606,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L424",
+      "source_location": "L425",
       "weight": 1.0
     },
     {
@@ -7609,7 +8617,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L425",
+      "source_location": "L426",
       "weight": 1.0
     },
     {
@@ -7620,7 +8628,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L426",
+      "source_location": "L427",
       "weight": 1.0
     },
     {
@@ -7631,7 +8639,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L427",
+      "source_location": "L428",
       "weight": 1.0
     },
     {
@@ -7642,7 +8650,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L428",
+      "source_location": "L429",
       "weight": 1.0
     },
     {
@@ -7653,7 +8661,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L429",
+      "source_location": "L430",
       "weight": 1.0
     },
     {
@@ -7664,7 +8672,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L430",
+      "source_location": "L431",
       "weight": 1.0
     },
     {
@@ -7675,7 +8683,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L415",
+      "source_location": "L416",
       "weight": 1.0
     },
     {
@@ -7686,7 +8694,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L416",
+      "source_location": "L417",
       "weight": 1.0
     },
     {
@@ -7697,7 +8705,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L417",
+      "source_location": "L418",
       "weight": 1.0
     },
     {
@@ -7708,7 +8716,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L418",
+      "source_location": "L419",
       "weight": 1.0
     },
     {
@@ -7719,7 +8727,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L408",
+      "source_location": "L409",
       "weight": 1.0
     },
     {
@@ -7730,7 +8738,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L409",
+      "source_location": "L410",
       "weight": 1.0
     },
     {
@@ -7741,7 +8749,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L398",
+      "source_location": "L399",
       "weight": 1.0
     },
     {
@@ -7752,7 +8760,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L399",
+      "source_location": "L400",
       "weight": 1.0
     },
     {
@@ -7763,7 +8771,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L400",
+      "source_location": "L401",
       "weight": 1.0
     },
     {
@@ -7774,7 +8782,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L401",
+      "source_location": "L402",
       "weight": 1.0
     },
     {
@@ -7785,7 +8793,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L402",
+      "source_location": "L403",
       "weight": 1.0
     },
     {
@@ -7796,7 +8804,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L476",
+      "source_location": "L477",
       "weight": 1.0
     },
     {
@@ -7807,7 +8815,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L477",
+      "source_location": "L478",
       "weight": 1.0
     },
     {
@@ -7818,7 +8826,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L478",
+      "source_location": "L479",
       "weight": 1.0
     },
     {
@@ -7829,7 +8837,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L479",
+      "source_location": "L480",
       "weight": 1.0
     },
     {
@@ -7840,7 +8848,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L129",
+      "source_location": "L130",
       "weight": 1.0
     },
     {
@@ -7851,7 +8859,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L165",
+      "source_location": "L166",
       "weight": 1.0
     },
     {
@@ -7862,7 +8870,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L185",
+      "source_location": "L186",
       "weight": 1.0
     },
     {
@@ -7873,7 +8881,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L205",
+      "source_location": "L206",
       "weight": 1.0
     },
     {
@@ -7884,7 +8892,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L25",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -7895,7 +8903,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L34",
+      "source_location": "L35",
       "weight": 1.0
     },
     {
@@ -7906,7 +8914,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L41",
+      "source_location": "L42",
       "weight": 1.0
     },
     {
@@ -7917,6 +8925,72 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "build-bridge/NowPlayingBridge.cs",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "src_actions_favorite_favoriteaction",
+      "target": "src_actions_favorite_favoriteaction_onupdate",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/actions/favorite.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "src_actions_favorite_favoriteaction",
+      "target": "src_actions_favorite_favoriteaction_onwillappear",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/actions/favorite.ts",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "src_actions_favorite_favoriteaction",
+      "target": "src_actions_favorite_favoriteaction_onwilldisappear",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/actions/favorite.ts",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "src_actions_favorite_favoriteaction",
+      "target": "src_actions_favorite_favoriteaction_onkeydown",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/actions/favorite.ts",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "src_actions_favorite_favoriteaction",
+      "target": "src_actions_favorite_favoriteaction_synctrack",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/actions/favorite.ts",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "src_actions_favorite_favoriteaction",
+      "target": "src_actions_favorite_favoriteaction_setall",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/actions/favorite.ts",
       "source_location": "L48",
       "weight": 1.0
     },
@@ -7939,7 +9013,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L160",
+      "source_location": "L167",
       "weight": 1.0
     },
     {
@@ -7950,7 +9024,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L162",
+      "source_location": "L169",
       "weight": 1.0
     },
     {
@@ -7961,7 +9035,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L172",
+      "source_location": "L180",
+      "weight": 1.0
+    },
+    {
+      "source": "src_actions_now_playing_nowplayingaction",
+      "target": "src_actions_now_playing_nowplayingaction_ondidreceivesettings",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/actions/now-playing.ts",
+      "source_location": "L195",
       "weight": 1.0
     },
     {
@@ -7972,7 +9057,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L186",
+      "source_location": "L212",
       "weight": 1.0
     },
     {
@@ -7983,7 +9068,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L207",
+      "source_location": "L233",
       "weight": 1.0
     },
     {
@@ -7994,7 +9079,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L211",
+      "source_location": "L237",
       "weight": 1.0
     },
     {
@@ -8005,7 +9090,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L215",
+      "source_location": "L241",
+      "weight": 1.0
+    },
+    {
+      "source": "src_actions_now_playing_nowplayingaction",
+      "target": "src_actions_now_playing_nowplayingaction_fetchnext",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/actions/now-playing.ts",
+      "source_location": "L303",
       "weight": 1.0
     },
     {
@@ -8016,7 +9112,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L271",
+      "source_location": "L320",
       "weight": 1.0
     },
     {
@@ -8027,7 +9123,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L278",
+      "source_location": "L327",
       "weight": 1.0
     },
     {
@@ -8038,7 +9134,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/actions/now-playing.ts",
-      "source_location": "L285",
+      "source_location": "L334",
       "weight": 1.0
     },
     {
@@ -8142,13 +9238,35 @@
     },
     {
       "source": "src_now_playing_service_nowplayingservice",
+      "target": "src_now_playing_service_nowplayingservice_control",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/now-playing-service.ts",
+      "source_location": "L104",
+      "weight": 1.0
+    },
+    {
+      "source": "src_now_playing_service_nowplayingservice",
       "target": "src_now_playing_service_nowplayingservice_controlwithoutput",
       "relation": "method",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/now-playing-service.ts",
-      "source_location": "L102",
+      "source_location": "L110",
+      "weight": 1.0
+    },
+    {
+      "source": "src_now_playing_service_nowplayingservice",
+      "target": "src_now_playing_service_nowplayingservice_uicontrol",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/now-playing-service.ts",
+      "source_location": "L129",
       "weight": 1.0
     },
     {
@@ -8159,7 +9277,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/now-playing-service.ts",
-      "source_location": "L115",
+      "source_location": "L136",
       "weight": 1.0
     },
     {
@@ -8170,7 +9288,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/now-playing-service.ts",
-      "source_location": "L38",
+      "source_location": "L46",
       "weight": 1.0
     },
     {
@@ -8181,7 +9299,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/now-playing-service.ts",
-      "source_location": "L42",
+      "source_location": "L50",
       "weight": 1.0
     },
     {
@@ -8192,7 +9310,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/now-playing-service.ts",
-      "source_location": "L53",
+      "source_location": "L61",
       "weight": 1.0
     },
     {
@@ -8203,18 +9321,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "src/now-playing-service.ts",
-      "source_location": "L89",
-      "weight": 1.0
-    },
-    {
-      "source": "src_now_playing_service_nowplayingservice",
-      "target": "src_now_playing_service_nowplayingservice_control",
-      "relation": "method",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "src/now-playing-service.ts",
-      "source_location": "L96",
+      "source_location": "L97",
       "weight": 1.0
     },
     {
@@ -8226,7 +9333,7 @@
       "confidence_score": 0.8,
       "context": "call",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L260",
+      "source_location": "L261",
       "weight": 1.0
     },
     {
@@ -8238,7 +9345,7 @@
       "confidence_score": 0.8,
       "context": "call",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L265",
+      "source_location": "L266",
       "weight": 1.0
     },
     {
@@ -8250,7 +9357,7 @@
       "confidence_score": 0.8,
       "context": "call",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L269",
+      "source_location": "L270",
       "weight": 1.0
     },
     {
@@ -8262,7 +9369,7 @@
       "confidence_score": 0.8,
       "context": "call",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L276",
+      "source_location": "L277",
       "weight": 1.0
     },
     {
@@ -8274,7 +9381,7 @@
       "confidence_score": 0.8,
       "context": "call",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L281",
+      "source_location": "L282",
       "weight": 1.0
     },
     {
@@ -8286,7 +9393,7 @@
       "confidence_score": 0.8,
       "context": "call",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L303",
+      "source_location": "L304",
       "weight": 1.0
     },
     {
@@ -8298,7 +9405,7 @@
       "confidence_score": 0.8,
       "context": "call",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L308",
+      "source_location": "L309",
       "weight": 1.0
     },
     {
@@ -8310,7 +9417,7 @@
       "confidence_score": 0.8,
       "context": "call",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L310",
+      "source_location": "L311",
       "weight": 1.0
     },
     {
@@ -8322,7 +9429,7 @@
       "confidence_score": 0.8,
       "context": "call",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L314",
+      "source_location": "L315",
       "weight": 1.0
     },
     {
@@ -8334,7 +9441,7 @@
       "confidence_score": 0.8,
       "context": "call",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L321",
+      "source_location": "L322",
       "weight": 1.0
     },
     {
@@ -8346,7 +9453,7 @@
       "confidence_score": 0.8,
       "context": "call",
       "source_file": "build-bridge/NowPlayingBridge.cs",
-      "source_location": "L328",
+      "source_location": "L329",
       "weight": 1.0
     },
     {
@@ -8358,7 +9465,7 @@
       "confidence_score": 0.85,
       "context": "collection",
       "source_file": "scripts/make-icons.mjs",
-      "source_location": "L310",
+      "source_location": "L336",
       "weight": 1.0
     },
     {
@@ -8370,7 +9477,7 @@
       "confidence_score": 0.85,
       "context": "collection",
       "source_file": "scripts/make-icons.mjs",
-      "source_location": "L311",
+      "source_location": "L337",
       "weight": 1.0
     },
     {
@@ -8382,7 +9489,7 @@
       "confidence_score": 0.85,
       "context": "collection",
       "source_file": "scripts/make-icons.mjs",
-      "source_location": "L312",
+      "source_location": "L338",
       "weight": 1.0
     },
     {
@@ -8394,7 +9501,7 @@
       "confidence_score": 0.85,
       "context": "collection",
       "source_file": "scripts/make-icons.mjs",
-      "source_location": "L313",
+      "source_location": "L339",
       "weight": 1.0
     },
     {
@@ -8406,7 +9513,7 @@
       "confidence_score": 0.85,
       "context": "collection",
       "source_file": "scripts/make-icons.mjs",
-      "source_location": "L314",
+      "source_location": "L340",
       "weight": 1.0
     },
     {
@@ -8418,7 +9525,7 @@
       "confidence_score": 0.85,
       "context": "collection",
       "source_file": "scripts/make-icons.mjs",
-      "source_location": "L315",
+      "source_location": "L341",
       "weight": 1.0
     },
     {
@@ -8430,7 +9537,7 @@
       "confidence_score": 0.85,
       "context": "collection",
       "source_file": "scripts/make-icons.mjs",
-      "source_location": "L316",
+      "source_location": "L342",
       "weight": 1.0
     },
     {
@@ -8442,7 +9549,31 @@
       "confidence_score": 0.85,
       "context": "collection",
       "source_file": "scripts/make-icons.mjs",
-      "source_location": "L317",
+      "source_location": "L343",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_make_icons",
+      "target": "scripts_make_icons_hearticon",
+      "relation": "indirect_call",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "context": "collection",
+      "source_file": "scripts/make-icons.mjs",
+      "source_location": "L344",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_make_icons",
+      "target": "scripts_make_icons_heartfilledicon",
+      "relation": "indirect_call",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "context": "collection",
+      "source_file": "scripts/make-icons.mjs",
+      "source_location": "L345",
       "weight": 1.0
     },
     {
@@ -9061,5 +10192,5 @@
       "source_file": "README.md"
     }
   ],
-  "built_at_commit": "c73c36e6617e0952443b6f472cab282d5d54282d"
+  "built_at_commit": "d3bb89f19e7170ab11923ebe17a5d1045702f2cc"
 }

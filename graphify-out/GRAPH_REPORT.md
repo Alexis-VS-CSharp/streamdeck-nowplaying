@@ -1,17 +1,17 @@
-# Graph Report - streamdeck-applemusic-nowplaying  (2026-09-30)
+# Graph Report - streamdeck-applemusic-nowplaying  (2026-10-10)
 
 ## Corpus Check
-- 20 files · ~9,694 words
+- 21 files · ~11,481 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 7 file(s) not represented in the graph (top: (none) 3, .exe 2, .WinMD 1)
 
 ## Summary
-- 290 nodes · 450 edges · 12 communities (11 shown, 1 thin omitted)
-- Extraction: 96% EXTRACTED · 4% INFERRED · 0% AMBIGUOUS · INFERRED: 19 edges (avg confidence: 0.82)
+- 318 nodes · 511 edges · 14 communities (12 shown, 2 thin omitted)
+- Extraction: 96% EXTRACTED · 4% INFERRED · 0% AMBIGUOUS · INFERRED: 21 edges (avg confidence: 0.82)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `c73c36e6`
+- Built from commit: `d3bb89f1`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -28,18 +28,20 @@
 - compilerOptions
 - Apple Music Now Playing README (French)
 - com.alexisvscsharp.nowplaying.sdPlugin/package.json
+- AppleMusicUi
+- FavoriteAction
 
 ## God Nodes (most connected - your core abstractions)
 1. `Apple Music Now Playing README (English)` - 19 edges
 2. `IAudioSessionControl2` - 15 edges
-3. `Apple Music Now Playing README (French)` - 15 edges
-4. `NowPlayingAction` - 13 edges
-5. `compilerOptions` - 13 edges
-6. `nowPlayingService` - 12 edges
-7. `IAudioSessionControl` - 11 edges
-8. `withBrandBackground()` - 10 edges
+3. `NowPlayingAction` - 15 edges
+4. `Apple Music Now Playing README (French)` - 15 edges
+5. `nowPlayingService` - 14 edges
+6. `compilerOptions` - 13 edges
+7. `withBrandBackground()` - 12 edges
+8. `IAudioSessionControl` - 11 edges
 9. `NowPlayingBridge` - 10 edges
-10. `@elgato/streamdeck` - 8 edges
+10. `FavoriteAction` - 9 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Apple Music Now Playing README (English)` --references--> `Apple Music Now Playing README (French)`  [EXTRACTED]
@@ -57,23 +59,23 @@
 - **Launch Playlist/Album Playback Flow** — readme_launch_playlist_album, readme_music_protocol, readme_ui_automation [EXTRACTED 1.00]
 - **Windows Bridging via NowPlayingBridge.exe (English)** — readme_nowplayingbridge_exe, readme_smtc, readme_core_audio, readme_ui_automation [EXTRACTED 1.00]
 
-## Communities (12 total, 1 thin omitted)
+## Communities (14 total, 2 thin omitted)
 
 ### Community 0 - "plugin.ts"
 Cohesion: 0.07
 Nodes (22): @elgato/streamdeck, ref_node_child_process, ref_node_events, ref_node_path, ref_node_readline, MuteAction, action, BRIDGE_PATH (+14 more)
 
 ### Community 1 - "IAudioSessionControl2"
-Cohesion: 0.07
-Nodes (6): IAudioSessionControl, IAudioSessionControl2, IAudioSessionManager2, ISimpleAudioVolume, Guid, IntPtr
+Cohesion: 0.09
+Nodes (4): IAudioSessionControl, IAudioSessionControl2, ISimpleAudioVolume, Guid
 
 ### Community 2 - "NowPlayingBridge.cs"
-Cohesion: 0.09
-Nodes (14): AppleMusicVolume, IAudioSessionEnumerator, IMMDevice, IMMDeviceCollection, IMMDeviceEnumerator, List, system, system_collections_generic (+6 more)
+Cohesion: 0.07
+Nodes (17): AppleMusicVolume, IAudioSessionEnumerator, IAudioSessionManager2, IMMDevice, IMMDeviceCollection, IMMDeviceEnumerator, IntPtr, List (+9 more)
 
 ### Community 3 - "now-playing.ts"
 Cohesion: 0.10
-Nodes (20): ARTIST_SPEC, cleanArtist(), DialState, FieldState, fits(), formatArtists(), formatTime(), makeFieldState() (+12 more)
+Nodes (21): ARTIST_SPEC, cleanArtist(), DialState, FieldState, fits(), formatArtists(), formatTime(), makeFieldState() (+13 more)
 
 ### Community 4 - "package.json"
 Cohesion: 0.06
@@ -84,8 +86,8 @@ Cohesion: 0.18
 Nodes (17): Apple Music Now Playing README (English), Apple Music for Windows, Core Audio (ISimpleAudioVolume), Corsair Galleon 100 SD, Keypad Buttons Feature, Launch Playlist/Album Button Feature, MIT License (excluding Apple Music icons), music:// Protocol (+9 more)
 
 ### Community 6 - "make-icons.mjs"
-Cohesion: 0.18
-Nodes (21): ref_node_zlib, chunk(), crc32(), CRC_TABLE, drawSpeaker(), encodePng(), makeCanvas(), muteIcon() (+13 more)
+Cohesion: 0.16
+Nodes (24): ref_node_zlib, chunk(), crc32(), CRC_TABLE, drawSpeaker(), encodePng(), heartFilledIcon(), heartIcon() (+16 more)
 
 ### Community 7 - "manifest.json"
 Cohesion: 0.12
@@ -103,25 +105,29 @@ Nodes (14): compilerOptions, esModuleInterop, forceConsistentCasingInFileNames, 
 Cohesion: 0.23
 Nodes (13): Apple Music Now Playing README (French), Apple Music for Windows, Core Audio (ISimpleAudioVolume), Keypad Buttons Feature, Launch Playlist/Album Button Feature, music:// Protocol, Now Playing Dial Feature, NowPlayingBridge.exe (+5 more)
 
+### Community 12 - "AppleMusicUi"
+Cohesion: 0.38
+Nodes (4): AutomationElement, AppleMusicUi, DllImport, UIntPtr
+
 ## Knowledge Gaps
-- **75 isolated node(s):** `Name`, `Author`, `UUID`, `Icon`, `Description` (+70 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 122 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **76 isolated node(s):** `Name`, `Author`, `UUID`, `Icon`, `Description` (+71 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 127 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **2 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `@elgato/streamdeck` connect `plugin.ts` to `now-playing.ts`, `package.json`?**
-  _High betweenness centrality (0.080) - this node is a cross-community bridge._
+  _High betweenness centrality (0.077) - this node is a cross-community bridge._
 - **Why does `Apple Music Now Playing README (English)` connect `Apple Music Now Playing README (English)` to `NowPlayingBridge.cs`, `Apple Music Now Playing README (French)`?**
-  _High betweenness centrality (0.036) - this node is a cross-community bridge._
-- **Why does `IAudioSessionControl2` connect `IAudioSessionControl2` to `NowPlayingBridge.cs`?**
   _High betweenness centrality (0.033) - this node is a cross-community bridge._
+- **Why does `IAudioSessionControl2` connect `IAudioSessionControl2` to `NowPlayingBridge.cs`?**
+  _High betweenness centrality (0.031) - this node is a cross-community bridge._
 - **What connects `Name`, `Author`, `UUID` to the rest of the system?**
-  _75 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _76 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `plugin.ts` be split into smaller, more focused modules?**
-  _Cohesion score 0.07246376811594203 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.0726950354609929 - nodes in this community are weakly interconnected._
 - **Should `IAudioSessionControl2` be split into smaller, more focused modules?**
-  _Cohesion score 0.07152496626180836 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.08994708994708994 - nodes in this community are weakly interconnected._
 - **Should `NowPlayingBridge.cs` be split into smaller, more focused modules?**
-  _Cohesion score 0.0928030303030303 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.0696969696969697 - nodes in this community are weakly interconnected._

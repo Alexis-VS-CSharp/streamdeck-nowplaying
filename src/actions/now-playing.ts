@@ -30,11 +30,19 @@ type Timeline = {
 	playing: boolean;
 };
 
+// normal = titre/artiste en cours ; label = "Prochain son" ; next = titre/artiste suivants (fin de morceau)
+type Mode = "normal" | "label" | "next";
+
 type DialState = {
 	trackKey: string;
+	curTitle: string;
+	curArtist: string;
+	mode: Mode;
+	nextTitle: string;
+	nextArtist: string;
+	nextRequested: boolean;
 	title: FieldState;
 	artist: FieldState;
-	next: FieldState;
 	paused: boolean;
 	timeline: Timeline;
 	shownElapsed: string;
@@ -51,8 +59,13 @@ const CLICK_WINDOW_MS = 350; // 1 clic = pause/lecture, 2 = suivant, 3+ = preced
 type ScrollSpec = { fontPx: number; semibold: boolean; maxPx: number; separator: string };
 const TITLE_SPEC: ScrollSpec = { fontPx: 15, semibold: true, maxPx: 86, separator: " — " }; // tiret cadratin pour marquer la boucle
 const ARTIST_SPEC: ScrollSpec = { fontPx: 12, semibold: false, maxPx: 86, separator: " " };
-const NEXT_SPEC: ScrollSpec = { fontPx: 10, semibold: false, maxPx: 86, separator: " — " };
-const NEXT_DELAY_MS = 1500; // laisse Apple Music mettre a jour sa file avant de la lire
+const LABEL_SPEC: ScrollSpec = { fontPx: 13, semibold: true, maxPx: 86, separator: " — " };
+const NEXT_LABEL = "Prochain son";
+// Annonce du prochain titre : a TEASER_MS de la fin, "Prochain son" pendant LABEL_MS, puis le titre suivant.
+const TEASER_MS = 12000;
+const LABEL_MS = 3000;
+const FETCH_AT_MS = 25000; // la lecture de la file prend ~5-10s : on la lance bien avant l'annonce
+const MIN_TEASER_DURATION_MS = 40000; // pas d'annonce sur les morceaux tres courts
 
 /**
  * Le champ "Artist" expose par Apple Music via SMTC contient parfois
@@ -158,6 +171,52 @@ function tickField(state: FieldState, spec: ScrollSpec): boolean {
 	return true;
 }
 
+function remainingMs(state: DialState): number {
+	return state.timeline.durationMs - positionOf(state.timeline);
+}
+
+function wantedMode(state: DialState): Mode {
+	if (!state.nextTitle || state.timeline.durationMs < MIN_TEASER_DURATION_MS) {
+		return "normal";
+	}
+	const remaining = remainingMs(state);
+	if (remaining > TEASER_MS) {
+		return "normal";
+	}
+	return remaining > TEASER_MS - LABEL_MS ? "label" : "next";
+}
+
+function titleSpec(state: DialState): ScrollSpec {
+	return state.mode === "label" ? LABEL_SPEC : TITLE_SPEC;
+}
+
+/** Valeur + police + couleur du titre : le libelle "Prochain son" est plus petit et grise pour tenir sur la ligne. */
+function titleFeedback(state: DialState): { value: string; font: { size: number; weight: number }; color: string } {
+	const label = state.mode === "label";
+	return {
+		value: scrollText(state.title.text, state.title.pos, titleSpec(state)),
+		font: { size: label ? 13 : 15, weight: 600 },
+		color: label ? "#B0B0B0" : "#FFFFFF"
+	};
+}
+
+function artistFeedback(state: DialState): string {
+	return scrollText(state.artist.text, state.artist.pos, ARTIST_SPEC) || (state.mode === "normal" ? "Apple Music" : "");
+}
+
+/** Bascule normal / "Prochain son" / titre suivant selon le temps restant. Renvoie true si l'affichage doit etre renvoye. */
+function syncMode(state: DialState): boolean {
+	const wanted = wantedMode(state);
+	if (wanted === state.mode) {
+		return false;
+	}
+	streamDeck.logger.info(`TMPDEBUG dial mode -> ${wanted} (remaining ${Math.round(remainingMs(state) / 1000)}s)`);
+	state.mode = wanted;
+	state.title = makeFieldState(wanted === "normal" ? state.curTitle : wanted === "label" ? NEXT_LABEL : state.nextTitle);
+	state.artist = makeFieldState(wanted === "normal" ? state.curArtist : wanted === "label" ? "" : state.nextArtist);
+	return true;
+}
+
 @action({ UUID: "com.alexisvscsharp.nowplaying.nowplaying" })
 export class NowPlayingAction extends SingletonAction<NowPlayingSettings> {
 	private scrollTimer: NodeJS.Timeout | null = null;
@@ -196,16 +255,14 @@ export class NowPlayingAction extends SingletonAction<NowPlayingSettings> {
 		const enabled = ev.payload.settings?.showNext !== false;
 		this.showNext.set(ev.action.id, enabled);
 		const state = this.dialState.get(ev.action.id);
-		if (!state) {
+		if (!state || enabled) {
 			return;
 		}
-		if (enabled) {
-			this.fetchNext(ev.action.id, state.trackKey);
-		} else {
-			state.next = makeFieldState("");
-			if (ev.action.isDial()) {
-				await ev.action.setFeedback({ next: "" });
-			}
+		// Option decochee : on oublie le titre suivant et on revient a l'affichage normal.
+		state.nextTitle = "";
+		state.nextArtist = "";
+		if (syncMode(state) && ev.action.isDial()) {
+			await ev.action.setFeedback({ title: titleFeedback(state), artist: artistFeedback(state) });
 		}
 	}
 
@@ -246,7 +303,14 @@ export class NowPlayingAction extends SingletonAction<NowPlayingSettings> {
 
 			if (!data.hasSession) {
 				this.dialState.delete(visibleAction.id);
-				await visibleAction.setFeedback({ title: "Apple Music", artist: "—", pauseIcon: { enabled: false }, progress: 0, elapsed: "", remaining: "", next: "" });
+				await visibleAction.setFeedback({
+					title: { value: "Apple Music", font: { size: 15, weight: 600 }, color: "#FFFFFF" },
+					artist: "—",
+					pauseIcon: { enabled: false },
+					progress: 0,
+					elapsed: "",
+					remaining: ""
+				});
 				continue;
 			}
 
@@ -257,7 +321,7 @@ export class NowPlayingAction extends SingletonAction<NowPlayingSettings> {
 			const duration = data.durationMs ?? 0;
 			const trackKey = `${title}|${artist}`;
 			const previous = this.dialState.get(visibleAction.id);
-			const trackChanged = !previous || previous.title.text !== title || previous.artist.text !== artist;
+			const trackChanged = !previous || previous.trackKey !== trackKey;
 
 			// Garde l'interpolation en cours tant que le poll (arrondi a la seconde)
 			// est coherent avec elle ; sinon (piste, pause/lecture, seek) on resynchronise.
@@ -276,22 +340,33 @@ export class NowPlayingAction extends SingletonAction<NowPlayingSettings> {
 			// tickScroll() toutes les 400ms. Rappeler scrollText(title, 0) a
 			// chaque poll (1.5s) l'ecrasait et faisait "sauter" le texte au debut.
 			const state: DialState = trackChanged
-				? { trackKey, title: makeFieldState(title), artist: makeFieldState(artist), next: makeFieldState(""), paused, timeline, shownElapsed: "" }
+				? {
+						trackKey,
+						curTitle: title,
+						curArtist: artist,
+						mode: "normal",
+						nextTitle: "",
+						nextArtist: "",
+						nextRequested: false,
+						title: makeFieldState(title),
+						artist: makeFieldState(artist),
+						paused,
+						timeline,
+						shownElapsed: ""
+					}
 				: previous;
 			state.paused = paused;
 			state.timeline = timeline;
 			this.dialState.set(visibleAction.id, state);
-			if (trackChanged && this.showNext.get(visibleAction.id) !== false) {
-				this.fetchNext(visibleAction.id, trackKey);
-			}
+			this.maybeFetchNext(visibleAction.id, state);
+			syncMode(state);
 
 			const time = timeFeedback(timeline);
 			state.shownElapsed = time.elapsed;
 
 			await visibleAction.setFeedback({
-				title: scrollText(state.title.text, state.title.pos, TITLE_SPEC),
-				artist: scrollText(state.artist.text, state.artist.pos, ARTIST_SPEC) || "Apple Music",
-				next: scrollText(state.next.text, state.next.pos, NEXT_SPEC),
+				title: titleFeedback(state),
+				artist: artistFeedback(state),
 				pauseIcon: { enabled: paused },
 				...time,
 				...(data.thumbnail && data.thumbMime ? { cover: `data:${data.thumbMime};base64,${data.thumbnail}` } : {})
@@ -299,22 +374,33 @@ export class NowPlayingAction extends SingletonAction<NowPlayingSettings> {
 		}
 	}
 
+	/** Lance (une seule fois par morceau) la lecture de la file d'attente quand la fin du morceau approche. */
+	private maybeFetchNext(id: string, state: DialState): void {
+		if (state.nextRequested || this.showNext.get(id) === false) {
+			return;
+		}
+		if (state.timeline.durationMs < MIN_TEASER_DURATION_MS || remainingMs(state) > FETCH_AT_MS) {
+			return;
+		}
+		state.nextRequested = true;
+		void this.fetchNext(id, state.trackKey);
+	}
+
 	/** Lit le prochain titre de la file d'attente (le pont ouvre brievement le panneau File d'attente d'Apple Music). */
-	private fetchNext(id: string, trackKey: string): void {
-		setTimeout(async () => {
-			if (this.dialState.get(id)?.trackKey !== trackKey) {
-				return;
-			}
-			const [title, artist] = (await nowPlayingService.uiControl("NextTrack")).split("	");
-			const state = this.dialState.get(id);
-			const dial = [...this.actions].find((a) => a.id === id);
-			if (!state || state.trackKey !== trackKey || !dial?.isDial()) {
-				return;
-			}
-			streamDeck.logger.info(`next track read: ${title ? `"${title}"` : "none"}`);
-			state.next = makeFieldState(title ? `→ ${title}${artist ? ` · ${artist}` : ""}` : "");
-			await dial.setFeedback({ next: scrollText(state.next.text, state.next.pos, NEXT_SPEC) });
-		}, NEXT_DELAY_MS);
+	private async fetchNext(id: string, trackKey: string): Promise<void> {
+		const [title, artist] = (await nowPlayingService.uiControl("NextTrack")).split("	");
+		const state = this.dialState.get(id);
+		const dial = [...this.actions].find((a) => a.id === id);
+		if (!state || state.trackKey !== trackKey || !dial?.isDial()) {
+			return;
+		}
+		streamDeck.logger.info(`next track read: ${title ? `"${title}"` : "none"}`);
+		state.nextTitle = title ?? "";
+		state.nextArtist = artist ?? "";
+		// Si on est deja dans la fenetre d'annonce, on l'affiche tout de suite.
+		if (syncMode(state)) {
+			await dial.setFeedback({ title: titleFeedback(state), artist: artistFeedback(state) });
+		}
 	}
 
 	private ensureScrollTimer(): void {
@@ -341,22 +427,25 @@ export class NowPlayingAction extends SingletonAction<NowPlayingSettings> {
 				continue;
 			}
 
-			const fields = [
-				["title", state.title, TITLE_SPEC],
-				["artist", state.artist, ARTIST_SPEC],
-				["next", state.next, NEXT_SPEC]
-			] as const;
-			const changed = fields.filter(([, field, spec]) => tickField(field, spec));
+			this.maybeFetchNext(visibleAction.id, state);
+			const modeChanged = syncMode(state);
 			const time = timeFeedback(state.timeline);
 			const timeChanged = time.elapsed !== state.shownElapsed;
-			if (changed.length === 0 && !timeChanged) {
-				continue;
-			}
 			state.shownElapsed = time.elapsed;
 
+			if (modeChanged) {
+				await visibleAction.setFeedback({ ...time, title: titleFeedback(state), artist: artistFeedback(state) });
+				continue;
+			}
+			const titleChanged = tickField(state.title, titleSpec(state));
+			const artistChanged = tickField(state.artist, ARTIST_SPEC);
+			if (!titleChanged && !artistChanged && !timeChanged) {
+				continue;
+			}
 			await visibleAction.setFeedback({
 				...(timeChanged ? time : {}),
-				...Object.fromEntries(changed.map(([key, field, spec]) => [key, scrollText(field.text, field.pos, spec)]))
+				...(titleChanged ? { title: scrollText(state.title.text, state.title.pos, titleSpec(state)) } : {}),
+				...(artistChanged ? { artist: artistFeedback(state) } : {})
 			});
 		}
 	}
