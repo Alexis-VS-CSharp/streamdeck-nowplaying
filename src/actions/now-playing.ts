@@ -1,6 +1,7 @@
-import {
+import streamDeck, {
 	action,
 	DialDownEvent,
+	DidReceiveSettingsEvent,
 	DialRotateEvent,
 	SingletonAction,
 	TouchTapEvent,
@@ -12,6 +13,7 @@ import { textWidthPx } from "../text-metrics";
 
 type NowPlayingSettings = {
 	filter?: string;
+	showNext?: boolean;
 };
 
 type FieldState = {
@@ -29,8 +31,10 @@ type Timeline = {
 };
 
 type DialState = {
+	trackKey: string;
 	title: FieldState;
 	artist: FieldState;
+	next: FieldState;
 	paused: boolean;
 	timeline: Timeline;
 	shownElapsed: string;
@@ -47,6 +51,8 @@ const CLICK_WINDOW_MS = 350; // 1 clic = pause/lecture, 2 = suivant, 3+ = preced
 type ScrollSpec = { fontPx: number; semibold: boolean; maxPx: number; separator: string };
 const TITLE_SPEC: ScrollSpec = { fontPx: 15, semibold: true, maxPx: 86, separator: " — " }; // tiret cadratin pour marquer la boucle
 const ARTIST_SPEC: ScrollSpec = { fontPx: 12, semibold: false, maxPx: 86, separator: " " };
+const NEXT_SPEC: ScrollSpec = { fontPx: 10, semibold: false, maxPx: 86, separator: " — " };
+const NEXT_DELAY_MS = 1500; // laisse Apple Music mettre a jour sa file avant de la lire
 
 /**
  * Le champ "Artist" expose par Apple Music via SMTC contient parfois
@@ -157,10 +163,12 @@ export class NowPlayingAction extends SingletonAction<NowPlayingSettings> {
 	private scrollTimer: NodeJS.Timeout | null = null;
 	private dialState = new Map<string, DialState>();
 	private clickState = new Map<string, { count: number; timer: NodeJS.Timeout }>();
+	private showNext = new Map<string, boolean>();
 	private onUpdate = (data: NowPlayingPayload) => void this.render(data);
 
 	override async onWillAppear(ev: WillAppearEvent<NowPlayingSettings>): Promise<void> {
 		const filter = ev.payload.settings?.filter?.trim() || DEFAULT_FILTER;
+		this.showNext.set(ev.action.id, ev.payload.settings?.showNext !== false);
 		if ([...this.actions].length === 1) {
 			nowPlayingService.on("update", this.onUpdate);
 		}
@@ -171,6 +179,7 @@ export class NowPlayingAction extends SingletonAction<NowPlayingSettings> {
 
 	override onWillDisappear(ev: WillDisappearEvent<NowPlayingSettings>): void {
 		this.dialState.delete(ev.action.id);
+		this.showNext.delete(ev.action.id);
 		const pendingClick = this.clickState.get(ev.action.id);
 		if (pendingClick) {
 			clearTimeout(pendingClick.timer);
@@ -180,6 +189,23 @@ export class NowPlayingAction extends SingletonAction<NowPlayingSettings> {
 		if ([...this.actions].length === 0) {
 			nowPlayingService.off("update", this.onUpdate);
 			this.stopScrollTimer();
+		}
+	}
+
+	override async onDidReceiveSettings(ev: DidReceiveSettingsEvent<NowPlayingSettings>): Promise<void> {
+		const enabled = ev.payload.settings?.showNext !== false;
+		this.showNext.set(ev.action.id, enabled);
+		const state = this.dialState.get(ev.action.id);
+		if (!state) {
+			return;
+		}
+		if (enabled) {
+			this.fetchNext(ev.action.id, state.trackKey);
+		} else {
+			state.next = makeFieldState("");
+			if (ev.action.isDial()) {
+				await ev.action.setFeedback({ next: "" });
+			}
 		}
 	}
 
@@ -220,7 +246,7 @@ export class NowPlayingAction extends SingletonAction<NowPlayingSettings> {
 
 			if (!data.hasSession) {
 				this.dialState.delete(visibleAction.id);
-				await visibleAction.setFeedback({ title: "Apple Music", artist: "—", pauseIcon: { enabled: false }, progress: 0, elapsed: "", remaining: "" });
+				await visibleAction.setFeedback({ title: "Apple Music", artist: "—", pauseIcon: { enabled: false }, progress: 0, elapsed: "", remaining: "", next: "" });
 				continue;
 			}
 
@@ -229,6 +255,7 @@ export class NowPlayingAction extends SingletonAction<NowPlayingSettings> {
 			const paused = data.status === "Paused";
 			const polled = Math.max(0, data.positionMs ?? 0);
 			const duration = data.durationMs ?? 0;
+			const trackKey = `${title}|${artist}`;
 			const previous = this.dialState.get(visibleAction.id);
 			const trackChanged = !previous || previous.title.text !== title || previous.artist.text !== artist;
 
@@ -249,11 +276,14 @@ export class NowPlayingAction extends SingletonAction<NowPlayingSettings> {
 			// tickScroll() toutes les 400ms. Rappeler scrollText(title, 0) a
 			// chaque poll (1.5s) l'ecrasait et faisait "sauter" le texte au debut.
 			const state: DialState = trackChanged
-				? { title: makeFieldState(title), artist: makeFieldState(artist), paused, timeline, shownElapsed: "" }
+				? { trackKey, title: makeFieldState(title), artist: makeFieldState(artist), next: makeFieldState(""), paused, timeline, shownElapsed: "" }
 				: previous;
 			state.paused = paused;
 			state.timeline = timeline;
 			this.dialState.set(visibleAction.id, state);
+			if (trackChanged && this.showNext.get(visibleAction.id) !== false) {
+				this.fetchNext(visibleAction.id, trackKey);
+			}
 
 			const time = timeFeedback(timeline);
 			state.shownElapsed = time.elapsed;
@@ -261,11 +291,30 @@ export class NowPlayingAction extends SingletonAction<NowPlayingSettings> {
 			await visibleAction.setFeedback({
 				title: scrollText(state.title.text, state.title.pos, TITLE_SPEC),
 				artist: scrollText(state.artist.text, state.artist.pos, ARTIST_SPEC) || "Apple Music",
+				next: scrollText(state.next.text, state.next.pos, NEXT_SPEC),
 				pauseIcon: { enabled: paused },
 				...time,
 				...(data.thumbnail && data.thumbMime ? { cover: `data:${data.thumbMime};base64,${data.thumbnail}` } : {})
 			});
 		}
+	}
+
+	/** Lit le prochain titre de la file d'attente (le pont ouvre brievement le panneau File d'attente d'Apple Music). */
+	private fetchNext(id: string, trackKey: string): void {
+		setTimeout(async () => {
+			if (this.dialState.get(id)?.trackKey !== trackKey) {
+				return;
+			}
+			const [title, artist] = (await nowPlayingService.uiControl("NextTrack")).split("	");
+			const state = this.dialState.get(id);
+			const dial = [...this.actions].find((a) => a.id === id);
+			if (!state || state.trackKey !== trackKey || !dial?.isDial()) {
+				return;
+			}
+			streamDeck.logger.info(`next track read: ${title ? `"${title}"` : "none"}`);
+			state.next = makeFieldState(title ? `→ ${title}${artist ? ` · ${artist}` : ""}` : "");
+			await dial.setFeedback({ next: scrollText(state.next.text, state.next.pos, NEXT_SPEC) });
+		}, NEXT_DELAY_MS);
 	}
 
 	private ensureScrollTimer(): void {
@@ -292,19 +341,22 @@ export class NowPlayingAction extends SingletonAction<NowPlayingSettings> {
 				continue;
 			}
 
-			const titleChanged = tickField(state.title, TITLE_SPEC);
-			const artistChanged = tickField(state.artist, ARTIST_SPEC);
+			const fields = [
+				["title", state.title, TITLE_SPEC],
+				["artist", state.artist, ARTIST_SPEC],
+				["next", state.next, NEXT_SPEC]
+			] as const;
+			const changed = fields.filter(([, field, spec]) => tickField(field, spec));
 			const time = timeFeedback(state.timeline);
 			const timeChanged = time.elapsed !== state.shownElapsed;
-			if (!titleChanged && !artistChanged && !timeChanged) {
+			if (changed.length === 0 && !timeChanged) {
 				continue;
 			}
 			state.shownElapsed = time.elapsed;
 
 			await visibleAction.setFeedback({
 				...(timeChanged ? time : {}),
-				...(titleChanged ? { title: scrollText(state.title.text, state.title.pos, TITLE_SPEC) } : {}),
-				...(artistChanged ? { artist: scrollText(state.artist.text, state.artist.pos, ARTIST_SPEC) } : {})
+				...Object.fromEntries(changed.map(([key, field, spec]) => [key, scrollText(field.text, field.pos, spec)]))
 			});
 		}
 	}

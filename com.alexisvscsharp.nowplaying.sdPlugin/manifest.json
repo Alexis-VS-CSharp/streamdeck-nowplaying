@@ -132,6 +132,24 @@
       ]
     },
     {
+      "Name": "Favori",
+      "UUID": "com.alexisvscsharp.nowplaying.favorite",
+      "Icon": "imgs/actions/control/heart",
+      "Tooltip": "Ajoute ou retire le titre en cours des favoris d'Apple Music. L'icone montre le resultat du dernier appui sur le titre en cours (Apple Music n'expose pas l'etat sans ouvrir son menu).",
+      "Controllers": [
+        "Keypad"
+      ],
+      "DisableAutomaticStates": true,
+      "States": [
+        {
+          "Image": "imgs/actions/control/heart"
+        },
+        {
+          "Image": "imgs/actions/control/heart-filled"
+        }
+      ]
+    },
+    {
       "Name": "Lancer playlist / album",
       "UUID": "com.alexisvscsharp.nowplaying.play-media",
       "Icon": "imgs/actions/now-playing/icon",

@@ -4,13 +4,23 @@
     {
       "key": "cover",
       "type": "pixmap",
-      "rect": [0, 0, 100, 100],
+      "rect": [
+        0,
+        0,
+        100,
+        100
+      ],
       "zOrder": 0
     },
     {
       "key": "pauseIcon",
       "type": "pixmap",
-      "rect": [0, 0, 100, 100],
+      "rect": [
+        0,
+        0,
+        100,
+        100
+      ],
       "value": "imgs/actions/now-playing/pause-overlay",
       "enabled": false,
       "zOrder": 2
@@ -18,10 +28,18 @@
     {
       "key": "title",
       "type": "text",
-      "rect": [106, 8, 90, 40],
+      "rect": [
+        106,
+        3,
+        90,
+        22
+      ],
       "alignment": "left",
       "color": "#FFFFFF",
-      "font": { "size": 15, "weight": 600 },
+      "font": {
+        "size": 15,
+        "weight": 600
+      },
       "text-overflow": "clip",
       "value": "",
       "zOrder": 1
@@ -29,40 +47,87 @@
     {
       "key": "artist",
       "type": "text",
-      "rect": [106, 54, 90, 20],
+      "rect": [
+        106,
+        26,
+        90,
+        17
+      ],
       "alignment": "left",
       "color": "#B0B0B0",
-      "font": { "size": 12 },
+      "font": {
+        "size": 12
+      },
       "text-overflow": "ellipsis",
+      "value": "",
+      "zOrder": 1
+    },
+    {
+      "key": "next",
+      "type": "text",
+      "rect": [
+        106,
+        46,
+        90,
+        15
+      ],
+      "alignment": "left",
+      "color": "#8A8A8A",
+      "font": {
+        "size": 10
+      },
+      "text-overflow": "clip",
       "value": "",
       "zOrder": 1
     },
     {
       "key": "elapsed",
       "type": "text",
-      "rect": [106, 75, 44, 14],
+      "rect": [
+        106,
+        75,
+        44,
+        14
+      ],
       "alignment": "left",
       "color": "#B0B0B0",
-      "font": { "size": 10 },
+      "font": {
+        "size": 10
+      },
       "value": "",
       "zOrder": 1
     },
     {
       "key": "remaining",
       "type": "text",
-      "rect": [152, 75, 44, 14],
+      "rect": [
+        152,
+        75,
+        44,
+        14
+      ],
       "alignment": "right",
       "color": "#B0B0B0",
-      "font": { "size": 10 },
+      "font": {
+        "size": 10
+      },
       "value": "",
       "zOrder": 1
     },
     {
       "key": "progress",
       "type": "bar",
-      "rect": [106, 90, 90, 6],
+      "rect": [
+        106,
+        90,
+        90,
+        6
+      ],
       "value": 0,
-      "range": { "min": 0, "max": 100 },
+      "range": {
+        "min": 0,
+        "max": 100
+      },
       "subtype": 0,
       "border_w": 0,
       "bar_fill_c": "#FA233B",

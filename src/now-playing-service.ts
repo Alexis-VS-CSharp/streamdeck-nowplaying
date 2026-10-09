@@ -18,7 +18,15 @@ export type NowPlayingPayload = {
 	error?: string;
 };
 
-export type ControlAction = "Toggle" | "Next" | "Previous" | "VolumeUp" | "VolumeDown" | "VolumeMute";
+export type ControlAction =
+	| "Toggle"
+	| "Next"
+	| "Previous"
+	| "VolumeUp"
+	| "VolumeDown"
+	| "VolumeMute"
+	| "NextTrack"
+	| "FavoriteToggle";
 
 const BRIDGE_PATH = path.join(__dirname, "..", "resources", "NowPlayingBridge.exe");
 const DEFAULT_FILTER = "Apple";
@@ -110,6 +118,19 @@ class NowPlayingService extends EventEmitter {
 			});
 			child.on("exit", () => resolve(output.trim()));
 		});
+	}
+
+	private uiChain: Promise<unknown> = Promise.resolve();
+
+	/**
+	 * Commandes qui pilotent l'interface d'Apple Music (file d'attente, favori) : une seule a la
+	 * fois, sinon deux menus/panneaux s'ouvriraient en meme temps et se refermeraient mutuellement.
+	 */
+	uiControl(action: ControlAction): Promise<string> {
+		const run = () => this.controlWithOutput(action);
+		const result = this.uiChain.then(run, run);
+		this.uiChain = result;
+		return result;
 	}
 
 	private stopWatcher(): void {

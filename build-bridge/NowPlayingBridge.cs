@@ -6,6 +6,7 @@ using System.Text;
 using Windows.Foundation;
 using Windows.Media.Control;
 using Windows.Storage.Streams;
+using UIA = System.Windows.Automation;
 
 public static class NowPlayingBridge
 {
@@ -479,6 +480,179 @@ internal interface ISimpleAudioVolume
     int GetMute(out bool mute);
 }
 
+// --- Lecture de l'interface d'Apple Music (UI Automation) ---
+// Ni SMTC ni aucune API n'exposent la file d'attente ni l'etat "favori" :
+// on lit donc directement l'interface d'Apple Music, uniquement a la demande
+// (changement de titre / appui sur le bouton), jamais en boucle.
+
+public static class AppleMusicUi
+{
+    [DllImport("user32.dll")] private static extern void keybd_event(byte bVk, byte bScan, uint dwFlags, UIntPtr dwExtraInfo);
+    private const byte VK_ESCAPE = 0x1B;
+    private const uint KEYEVENTF_KEYUP = 0x0002;
+
+    private static UIA.AutomationElement GetWindow(out int pid)
+    {
+        pid = 0;
+        var procs = System.Diagnostics.Process.GetProcessesByName("AppleMusic");
+        if (procs.Length == 0 || procs[0].MainWindowHandle == IntPtr.Zero) return null;
+        pid = procs[0].Id;
+        return UIA.AutomationElement.FromHandle(procs[0].MainWindowHandle);
+    }
+
+    private static UIA.AutomationElement FindById(UIA.AutomationElement scope, string id)
+    {
+        return scope.FindFirst(
+            UIA.TreeScope.Descendants,
+            new UIA.PropertyCondition(UIA.AutomationElement.AutomationIdProperty, id));
+    }
+
+    private static UIA.AutomationElement FindFavoriteToggle(UIA.AutomationElement window)
+    {
+        // Les menus sont des popups enfants directs de la fenetre : on ne cherche que la dedans (rapide).
+        UIA.AutomationElement first = null;
+        foreach (UIA.AutomationElement popup in window.FindAll(
+            UIA.TreeScope.Children,
+            new UIA.PropertyCondition(UIA.AutomationElement.ClassNameProperty, "Microsoft.UI.Content.PopupWindowSiteBridge")))
+        {
+            foreach (UIA.AutomationElement item in popup.FindAll(
+                UIA.TreeScope.Descendants,
+                new UIA.PropertyCondition(UIA.AutomationElement.ClassNameProperty, "ToggleMenuFlyoutItem")))
+            {
+                if (first == null) first = item;
+                // Le nom depend de la langue d'Apple Music ; sinon le 1er interrupteur du menu est "Favorite".
+                if (System.Text.RegularExpressions.Regex.IsMatch(item.Current.Name, "fav|aime|love", System.Text.RegularExpressions.RegexOptions.IgnoreCase))
+                    return item;
+            }
+        }
+        return first;
+    }
+
+    private static void CloseMenu(UIA.AutomationElement item)
+    {
+        try { item.SetFocus(); } catch { }
+        System.Threading.Thread.Sleep(150);
+        keybd_event(VK_ESCAPE, 0, 0, UIntPtr.Zero);
+        keybd_event(VK_ESCAPE, 0, KEYEVENTF_KEYUP, UIntPtr.Zero);
+    }
+
+    /// <summary>Prochain titre de la file d'attente : "titre\tartiste", ou "" si indisponible.</summary>
+    public static string ReadNext()
+    {
+        try
+        {
+            int pid;
+            var window = GetWindow(out pid);
+            if (window == null) return "";
+            var button = FindById(window, "PlayQueueToggleButton");
+            object p;
+            if (button == null || !button.TryGetCurrentPattern(UIA.TogglePattern.Pattern, out p)) return "";
+            var toggle = (UIA.TogglePattern)p;
+
+            // Le panneau n'existe dans l'arbre UIA que ouvert : on l'ouvre le temps de lire, puis on le referme.
+            bool openedByUs = toggle.Current.ToggleState != UIA.ToggleState.On;
+            if (openedByUs) toggle.Toggle();
+            try
+            {
+                UIA.AutomationElement item = null;
+                for (int i = 0; i < 25 && item == null; i++)
+                {
+                    System.Threading.Thread.Sleep(100);
+                    var list = FindById(window, "PlayQueueListView");
+                    if (list != null)
+                    {
+                        item = list.FindFirst(
+                            UIA.TreeScope.Descendants,
+                            new UIA.PropertyCondition(UIA.AutomationElement.ControlTypeProperty, UIA.ControlType.ListItem));
+                    }
+                }
+                if (item == null) return "";
+
+                var names = new List<string>();
+                foreach (UIA.AutomationElement t in item.FindAll(
+                    UIA.TreeScope.Descendants,
+                    new UIA.PropertyCondition(UIA.AutomationElement.ControlTypeProperty, UIA.ControlType.Text)))
+                {
+                    var n = t.Current.Name;
+                    if (!string.IsNullOrEmpty(n)) names.Add(n);
+                }
+                if (names.Count == 0) return "";
+
+                // Textes d'une ligne : titre, "Artiste - Album", duree.
+                string title = names[0];
+                string artist = "";
+                if (names.Count > 1 && !System.Text.RegularExpressions.Regex.IsMatch(names[1], @"^\d+:\d{2}(:\d{2})?$"))
+                {
+                    var sep = System.Text.RegularExpressions.Regex.Match(names[1], @"\s[-–—]\s");
+                    artist = sep.Success ? names[1].Substring(0, sep.Index) : names[1];
+                }
+                return title + "\t" + artist;
+            }
+            finally
+            {
+                if (openedByUs)
+                {
+                    try { toggle.Toggle(); } catch { }
+                }
+            }
+        }
+        catch
+        {
+            return "";
+        }
+    }
+
+    /// <summary>Bascule "Favorite" du titre en cours via le menu Action et renvoie le nouvel etat : "true", "false" ou "unknown".</summary>
+    public static string FavoriteToggle()
+    {
+        try
+        {
+            int pid;
+            var window = GetWindow(out pid);
+            if (window == null) return "unknown";
+            var actionButton = FindById(window, "ActionButton");
+            if (actionButton == null) return "unknown";
+
+            // Un menu deja ouvert (essai precedent interrompu) serait referme par le clic : on le ferme d'abord.
+            var stale = FindFavoriteToggle(window);
+            if (stale != null) CloseMenu(stale);
+
+            UIA.AutomationElement fav = null;
+            for (int attempt = 0; attempt < 2 && fav == null; attempt++)
+            {
+                ((UIA.InvokePattern)actionButton.GetCurrentPattern(UIA.InvokePattern.Pattern)).Invoke();
+                for (int i = 0; i < 30 && fav == null; i++)
+                {
+                    fav = FindFavoriteToggle(window);
+                    if (fav == null) System.Threading.Thread.Sleep(100);
+                }
+                if (fav == null)
+                {
+                    // Le menu ne s'est pas ouvert (ou s'est referme) : Echap par securite puis une seule relance.
+                    keybd_event(VK_ESCAPE, 0, 0, UIntPtr.Zero);
+                    keybd_event(VK_ESCAPE, 0, KEYEVENTF_KEYUP, UIntPtr.Zero);
+                    System.Threading.Thread.Sleep(500);
+                }
+            }
+            if (fav == null) return "unknown";
+
+            var tp = (UIA.TogglePattern)fav.GetCurrentPattern(UIA.TogglePattern.Pattern);
+            bool wasOn = tp.Current.ToggleState == UIA.ToggleState.On;
+            tp.Toggle();
+            System.Threading.Thread.Sleep(300);
+
+            // Activer l'entree referme normalement le menu ; sinon on force la fermeture.
+            var still = FindFavoriteToggle(window);
+            if (still != null) CloseMenu(still);
+            return wasOn ? "false" : "true";
+        }
+        catch
+        {
+            return "unknown";
+        }
+    }
+}
+
 public static class EntryPoint
 {
     public static int Main(string[] args)
@@ -508,6 +682,18 @@ public static class EntryPoint
         {
             var muted = AppleMusicVolume.ToggleMute();
             Console.WriteLine(muted.HasValue ? (muted.Value ? "true" : "false") : "unknown");
+            return 0;
+        }
+
+        if (action == "NextTrack")
+        {
+            Console.WriteLine(AppleMusicUi.ReadNext());
+            return 0;
+        }
+
+        if (action == "FavoriteToggle")
+        {
+            Console.WriteLine(AppleMusicUi.FavoriteToggle());
             return 0;
         }
 

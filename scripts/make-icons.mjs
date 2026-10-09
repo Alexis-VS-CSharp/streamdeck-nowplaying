@@ -284,6 +284,32 @@ function unmuteIcon(size) {
 	});
 }
 
+// Coeur : courbe parametrique classique, normalisee et centree en (cx, cy), `width` = largeur en fraction de l'icone.
+function heartPoints(cx, cy, width) {
+	const pts = [];
+	for (let i = 0; i < 90; i++) {
+		const t = (i / 90) * Math.PI * 2;
+		pts.push([16 * Math.sin(t) ** 3, 13 * Math.cos(t) - 5 * Math.cos(2 * t) - 2 * Math.cos(3 * t) - Math.cos(4 * t)]);
+	}
+	const ys = pts.map((p) => p[1]);
+	const midY = (Math.min(...ys) + Math.max(...ys)) / 2;
+	const k = width / 32;
+	return pts.map(([x, y]) => [cx + x * k, cy - (y - midY) * k]);
+}
+
+function heartIcon(size) {
+	return withBrandBackground(size, (c) => {
+		c.fillPolygon(heartPoints(0.5, 0.5, 0.56), WHITE);
+		c.fillPolygon(heartPoints(0.5, 0.5, 0.56 * 0.68), RED);
+	});
+}
+
+function heartFilledIcon(size) {
+	return withBrandBackground(size, (c) => {
+		c.fillPolygon(heartPoints(0.5, 0.5, 0.56), WHITE);
+	});
+}
+
 function pauseOverlay(size) {
 	const c = makeCanvas(size);
 	c.fillCircle(size / 2, size / 2, size * 0.42, [0, 0, 0, 170]);
@@ -314,7 +340,9 @@ for (const [name, fn] of Object.entries({
 	"volume-up": volumeUpIcon,
 	"volume-down": volumeDownIcon,
 	mute: muteIcon,
-	unmute: unmuteIcon
+	unmute: unmuteIcon,
+	heart: heartIcon,
+	"heart-filled": heartFilledIcon
 })) {
 	save(`${control}/${name}.png`, fn(72));
 	save(`${control}/${name}@2x.png`, fn(144));
