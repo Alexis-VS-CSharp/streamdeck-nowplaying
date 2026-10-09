@@ -25,7 +25,6 @@ export type ControlAction =
 	| "VolumeUp"
 	| "VolumeDown"
 	| "VolumeMute"
-	| "NextTrack"
 	| "FavoriteToggle";
 
 const BRIDGE_PATH = path.join(__dirname, "..", "resources", "NowPlayingBridge.exe");

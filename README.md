@@ -11,7 +11,6 @@ Windows Stream Deck plugin to control **Apple Music for Windows** from a Stream 
 - Title and artist(s), with smooth circular scrolling when the text overflows the screen (2s pause on every loop).
 - Multiple artists automatically reformatted as `Main artist feat. Second, Third`.
 - Progress bar (elapsed time / total track duration).
-- Next track in the queue shown under the artist (optional, toggle in the dial's settings). Apple Music exposes no API for its queue, so the plugin briefly opens Apple Music's **Queue** panel at each track change to read it.
 - **Single click** = play/pause · **double click** = next track · **triple click** = previous track.
 - **Rotate** the dial = next/previous track.
 - **Touch tap** = play/pause.

@@ -481,9 +481,8 @@ internal interface ISimpleAudioVolume
 }
 
 // --- Lecture de l'interface d'Apple Music (UI Automation) ---
-// Ni SMTC ni aucune API n'exposent la file d'attente ni l'etat "favori" :
-// on lit donc directement l'interface d'Apple Music, uniquement a la demande
-// (changement de titre / appui sur le bouton), jamais en boucle.
+// Aucune API n'expose l'etat "favori" : on passe par le menu d'Apple Music,
+// uniquement a la demande (appui sur le bouton), jamais en boucle.
 
 public static class AppleMusicUi
 {
@@ -534,72 +533,6 @@ public static class AppleMusicUi
         System.Threading.Thread.Sleep(150);
         keybd_event(VK_ESCAPE, 0, 0, UIntPtr.Zero);
         keybd_event(VK_ESCAPE, 0, KEYEVENTF_KEYUP, UIntPtr.Zero);
-    }
-
-    /// <summary>Prochain titre de la file d'attente : "titre\tartiste", ou "" si indisponible.</summary>
-    public static string ReadNext()
-    {
-        try
-        {
-            int pid;
-            var window = GetWindow(out pid);
-            if (window == null) return "";
-            var button = FindById(window, "PlayQueueToggleButton");
-            object p;
-            if (button == null || !button.TryGetCurrentPattern(UIA.TogglePattern.Pattern, out p)) return "";
-            var toggle = (UIA.TogglePattern)p;
-
-            // Le panneau n'existe dans l'arbre UIA que ouvert : on l'ouvre le temps de lire, puis on le referme.
-            bool openedByUs = toggle.Current.ToggleState != UIA.ToggleState.On;
-            if (openedByUs) toggle.Toggle();
-            try
-            {
-                UIA.AutomationElement item = null;
-                for (int i = 0; i < 25 && item == null; i++)
-                {
-                    System.Threading.Thread.Sleep(100);
-                    var list = FindById(window, "PlayQueueListView");
-                    if (list != null)
-                    {
-                        item = list.FindFirst(
-                            UIA.TreeScope.Descendants,
-                            new UIA.PropertyCondition(UIA.AutomationElement.ControlTypeProperty, UIA.ControlType.ListItem));
-                    }
-                }
-                if (item == null) return "";
-
-                var names = new List<string>();
-                foreach (UIA.AutomationElement t in item.FindAll(
-                    UIA.TreeScope.Descendants,
-                    new UIA.PropertyCondition(UIA.AutomationElement.ControlTypeProperty, UIA.ControlType.Text)))
-                {
-                    var n = t.Current.Name;
-                    if (!string.IsNullOrEmpty(n)) names.Add(n);
-                }
-                if (names.Count == 0) return "";
-
-                // Textes d'une ligne : titre, "Artiste - Album", duree.
-                string title = names[0];
-                string artist = "";
-                if (names.Count > 1 && !System.Text.RegularExpressions.Regex.IsMatch(names[1], @"^\d+:\d{2}(:\d{2})?$"))
-                {
-                    var sep = System.Text.RegularExpressions.Regex.Match(names[1], @"\s[-–—]\s");
-                    artist = sep.Success ? names[1].Substring(0, sep.Index) : names[1];
-                }
-                return title + "\t" + artist;
-            }
-            finally
-            {
-                if (openedByUs)
-                {
-                    try { toggle.Toggle(); } catch { }
-                }
-            }
-        }
-        catch
-        {
-            return "";
-        }
     }
 
     /// <summary>Bascule "Favorite" du titre en cours via le menu Action et renvoie le nouvel etat : "true", "false" ou "unknown".</summary>
@@ -682,12 +615,6 @@ public static class EntryPoint
         {
             var muted = AppleMusicVolume.ToggleMute();
             Console.WriteLine(muted.HasValue ? (muted.Value ? "true" : "false") : "unknown");
-            return 0;
-        }
-
-        if (action == "NextTrack")
-        {
-            Console.WriteLine(AppleMusicUi.ReadNext());
             return 0;
         }
 

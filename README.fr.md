@@ -11,7 +11,6 @@ Plugin Stream Deck (Windows) pour piloter **Apple Music for Windows** depuis un 
 - Titre et artiste(s) affichés, avec défilement circulaire fluide si le texte dépasse l'écran (pause de 2s à chaque boucle).
 - Artistes multiples reformatés automatiquement en `Artiste principal feat. Second, Troisième`.
 - Barre de progression (temps écoulé / durée totale du morceau).
-- Prochain titre de la file d'attente affiché sous l'artiste (optionnel, case à cocher dans les réglages du dial). Apple Music n'expose aucune API pour sa file d'attente : le plugin ouvre donc brièvement son panneau **File d'attente** à chaque changement de titre pour le lire.
 - **Appui simple** = lecture/pause · **double clic** = piste suivante · **triple clic** = piste précédente.
 - **Rotation** de la molette = piste suivante/précédente.
 - **Tap tactile** = lecture/pause.
